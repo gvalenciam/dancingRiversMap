@@ -1,0 +1,1780 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!--TODO: JQuery JS Script-->
+    <script type="text/javascript" src="js/jquery/jquery.min.js"></script>
+    <!--TODO: JQuery JS Script-->
+
+    <!--TODO: D3 JS Script-->
+    <script src="http://d3js.org/d3.v2.js"></script>
+    <!--TODO: D3 JS Script-->
+
+    <!--TODO: Line Graph JS Script-->
+    <script src="js/d3js_linegraph/line-graph.js"></script>
+    <!--TODO: Line Graph JS Script-->
+
+    <!--TODO: Bootstrap JS script-->
+    <script type="text/javascript" src="js/bootstrap/bootstrap.bundle.min.js"></script>
+    <!--TODO: Bootstrap JS script-->
+
+    <!--TODO: Language dependencies JS script-->
+    <!--<script src="./lib/CLDRPluralRuleParser/CLDRPluralRuleParser.js"></script>-->
+    <!--<script src="./lib/jquery.i18n/jquery.i18n.js"></script>-->
+    <!--<script src="./lib/jquery.i18n/jquery.i18n.messagestore.js"></script>-->
+    <!--<script src="./lib/jquery.i18n/jquery.i18n.fallbacks.js"></script>-->
+    <!--<script src="./lib/jquery.i18n/jquery.i18n.language.js"></script>-->
+    <!--<script src="./lib/jquery.i18n/jquery.i18n.parser.js"></script>-->
+    <!--<script src="./lib/jquery.i18n/jquery.i18n.emitter.js"></script>-->
+    <!--<script src="./lib/jquery.i18n/jquery.i18n.emitter.bidi.js"></script>-->
+    <!--<script src="./lib/history/jquery.history.js"></script>-->
+    <!--<script src="./lib/url/url.min.js"></script>-->
+    <!--TODO: Language dependencies JS script-->
+
+
+    <!--TODO: Font Awesome Script-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!--TODO: Font Awesome Script-->
+
+    <!--TODO: Bootstrap CSS Style-->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <!--TODO: Bootstrap CSS Style-->
+
+    <!--TODO: D3 Line Graph CSS-->
+    <link rel="stylesheet" href="css/d3js_linegraph/line-graph.css" type="text/css">
+    <!--TODO: D3 Line Graph CSS-->
+
+    <!--TODO: Missing Windows font include-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Sans+Narrow"/>
+    <!--TODO: Missing Windows font include-->
+
+    <!--TODO: Map overlay CSS style-->
+    <!--TODO: If a new overlay is added include its style in this file (use it as guideline too)-->
+    <link rel="stylesheet" href="css/map/map-overlay-elements.css">
+    <!--TODO: If a new overlay is added include its style in this file (use it as guideline too)-->
+    <!--TODO: Map overlay CSS style-->
+
+    <!--TODO: Horizontal side bar styles with icons-->
+    <link rel="stylesheet" href="css/map/horizontal-side-bar.css">
+    <!--TODO: Horizontal side bar styles with icons-->
+
+    <!--TODO: W3 Progress bar-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!--TODO: W3 Progress bar-->
+
+    <!--TODO: CITA logo splash loader-->
+    <link rel="stylesheet" href="css/map/splash-loader-screen.css">
+    <!--TODO: CITA logo splash loader-->
+
+    <!--TODO: CITA Logo overlay-->
+    <link rel="stylesheet" href="">
+    <!--TODO: CITA Logo overlay-->
+
+    <!--TODO: Video elements CSS style-->
+    <link rel="stylesheet" href="css/map/video-overlay-elements.css">
+    <!--TODO: Video elements CSS style-->
+
+    <style>
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        #main-wrapper {
+            display: block;
+        }
+
+    </style>
+
+</head>
+
+
+<!--TODO: Template upper CITA logo "0"-->
+<template>
+    <img id="cita-logo-overlay" src="img/Logos/cita_demo.png">
+</template>
+<!--TODO: Template upper CITA logo "0"-->
+
+
+<!--TODO: Template card (without options) "1"-->
+<template>
+
+    <div id="accordion-template-data-background" style="min-width: 16vw">
+
+            <!--Data Background Titles Style-->
+            <style>
+
+                .accordionLabel{
+                    font-family: "PT Sans Narrow";
+                    font-size: 18px;
+                }
+
+            </style>
+            <!--Data Background Titles Style-->
+
+
+
+
+            <!--Accordion Rivers Section-->
+            <div class="card" style="border-radius: 0px; border: 0px solid rgba(0,0,0,0.2); border-top-left-radius: 5px; border-top-right-radius: 5px;">
+
+                <!--Accordion First Section Title-->
+                <div class="card-header" id="heading-accordion-data-background" style="border-bottom: none">
+                    <h5 class="mb-0">
+                        <button id="data-background-button" class="btn" data-toggle="collapse" data-target="#collapse-accordion-data-background" aria-expanded="true" aria-controls="collapse-accordion-data-background" style="background-color: transparent; font-family: 'PT Sans Narrow'; font-size: 22px">
+                            Data Background
+                        </button>
+                    </h5>
+                </div>
+                <!--Accordion First Section Title-->
+
+                <!--Accordion First Section Future additions -->
+                <!--TODO: Ask for future additions data (no matter if fake)-->
+
+                <div id="collapse-accordion-data-background" class="collapse show" aria-labelledby="heading-accordion-data-background" data-parent="#accordion-template-data-background" style="background-color: rgba(200,200,200,0.125)">
+                    <div class="card-body">
+
+                        <div class="cntr">
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--TODO: Ask for future additions data (no matter if fake)-->
+                <!--Accordion First Section Future additions -->
+
+            </div>
+            <!--Accordion Rivers Section-->
+
+        </div>
+
+</template>
+<!--TODO: Template card (without options) "1"-->
+
+
+<!--TODO: Template card (without options) "2"-->
+<template>
+</template>
+<!--TODO: Template card (without options) "2"-->
+
+
+<!--TODO: Template radio button "3"-->
+<template>
+
+    <div style="display: flex">
+
+        <label for="radio-button-base" class="btn-radio">
+            <input type="radio" id="radio-button-base" class="radio-button-template" name="radio-button-template" checked>
+            <svg width="20px" height="20px" viewBox="0 0 20 20">
+                <circle cx="10" cy="10" r="9"></circle>
+                <path d="M10,7 C8.34314575,7 7,8.34314575 7,10 C7,11.6568542 8.34314575,13 10,13 C11.6568542,13 13,11.6568542 13,10 C13,8.34314575 11.6568542,7 10,7 Z" class="inner"></path>
+                <path d="M10,1 L10,1 L10,1 C14.9705627,1 19,5.02943725 19,10 L19,10 L19,10 C19,14.9705627 14.9705627,19 10,19 L10,19 L10,19 C5.02943725,19 1,14.9705627 1,10 L1,10 L1,10 C1,5.02943725 5.02943725,1 10,1 L10,1 Z" class="outer"></path>
+            </svg>
+            <span class="accordionLabel" id="radio-button-span"></span>
+        </label>
+
+    </div>
+
+</template>
+<!--TODO: Template radio button "3"-->
+
+
+<!--TODO: Template original data list left sidebar "4"-->
+<template>
+
+    <div class="app">
+
+        <style>
+
+            #right-side-bar-header{
+
+                display: flex;
+                justify-content: space-between;
+                align-content: center;
+
+            }
+            .side-bar-icon{
+                 height: 20px;
+                 width: 20px;
+                 margin-right: 5%;
+             }
+
+            .side-bar-inner-icon{
+                height: 25px;
+                width: 25px;
+                margin-right: 5%;
+                margin-top: 0;
+            }
+
+            #side-bar-left-title{
+                font-size: 1vw;
+                width: 60%;
+                align-self: center;
+            }
+
+            .panel-background-title{
+                color: rgba(33, 37, 41, 1.0);
+                font-size: 1vw;
+                width: 60%;
+                align-self: center;
+                cursor: pointer;
+                text-align: center;
+                background-color: transparent;
+                padding: 1% 1.5%;
+                -webkit-transition: all 0.5s;
+                -moz-transition: all 0.5s;
+                -ms-transition: all 0.5s;
+                -o-transition: all 0.5s;
+                transition: all 0.5s;
+            }
+
+            .panel-cita-title{
+                color: rgba(33, 37, 41, 1.0);
+                font-size: 1vw;
+                width: 20%;
+                align-self: center;
+                cursor: pointer;
+                text-align: center;
+                background-color: transparent;
+                padding: 1% 1.5%;
+            }
+
+            .panel-title-selected{
+                color: white !important;
+                background-color: rgba(75,75,75,1.0);
+                border-radius: 6px;
+            }
+
+            #left-panel-toggle-button{
+                width: 25px;
+                height: 25px;
+                cursor: pointer;
+                align-self: center;
+            }
+
+        </style>
+
+        <aside class="sidebarLeft" id="side-bar-left">
+
+            <header id="right-side-bar-header">
+                <span id="background-panel-background-title" data-i18n="side-bar-right-title" class="panel-background-title panel-title-selected">Background Data</span>
+                <span id="background-panel-cita-title" data-i18n="side-bar-left-title" class="panel-cita-title">CITA</span>
+                <img id="left-panel-toggle-button" src="img/side-bar-icon/arrow_left_icon.png">
+            </header>
+
+            <nav class="sidebar-nav">
+
+                <ul id="data-original-content-list">
+
+                </ul>
+
+            </nav>
+
+        </aside>
+
+    </div>
+
+</template>
+<!--TODO: Template original data list "4"-->
+
+
+<!--TODO: Template original data list menu option "5"-->
+<template>
+
+    <link rel="stylesheet" href="css/map/horizontal-side-bar.css">
+
+    <li>
+
+        <style>
+
+            .menu-arrow-bottom-image{
+                width: 25px;
+                height: 25px;
+                align-self: center;
+                cursor: pointer;
+            }
+
+        </style>
+
+        <a class="data-original-menu-button" id="data-original-menu-button" href="#">
+            <img id="data-original-menu-icon" class="side-bar-icon">
+            <span id="data-original-menu-title" class="data-original-menu-title"></span>
+            <img id="menu-arrow-bottom-image" src="img/side-bar-icon/arrow_bottom_icon.png" class="menu-arrow-bottom-image">
+        </a>
+
+        <ul class="nav-flyout nav-flyout-first-level" id="original-data-submenu-container">
+
+
+        </ul>
+
+    </li>
+
+</template>
+<!--TODO: Template original data list menu option "5"-->
+
+
+<!--TODO: Template original data list submenu option "6"-->
+<template>
+
+    <style>
+
+        .data-original-submenu-title{
+            font-size: 0.8vw;
+            width: 60%;
+        }
+
+    </style>
+
+    <!--<li id="original-data-submenu-option">-->
+    <li>
+
+        <a class="original-data-submenu-option-button" id="original-data-submenu-option-button">
+            <img id="data-original-submenu-icon" class="side-bar-inner-icon">
+            <span id="data-original-submenu-title" class="data-original-submenu-title"></span>
+            <img id="submenu-arrow-bottom-image" src="img/side-bar-icon/arrow_bottom_icon.png" class="menu-arrow-bottom-image">
+
+        </a>
+
+        <ul class="nav-flyout nav-flyout-second-level" id="original-data-second-level-submenu-container">
+
+        </ul>
+
+    </li>
+
+</template>
+<!--TODO: Template original data list submenu option "6"-->
+
+
+<!--TODO: Template morphometrics legend "7"-->
+<template>
+
+    <style>
+
+        .legendDIVStyle {
+
+            height: 16.25%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+            /*background-color: #4a4a4a;*/
+
+        }
+
+        .legendIMGStyle {
+
+            width: 16.25%;
+            height: 80%;
+            margin-right: 5%;
+
+        }
+
+        .legendSPANStyle {
+
+            width: 55%;
+            font-size: 10px;
+            /*color: rgba(0,0,0,0.7);*/
+            text-align: center;
+            /*font-weight: bold;*/
+            color: white;
+            /*color: rgba(33,37,41,1.0);*/
+
+
+        }
+
+    </style>
+
+    <div id="legend-subcontainer" class="legendDIVStyle">
+        <img id="legend-image" class="legendIMGStyle"><span id="legend-span" class="legendSPANStyle"></span>
+    </div>
+
+</template>
+<!--TODO: Template morphometrics legend "7"-->
+
+
+<!--TODO: Progress bar 8 year template "8"-->
+<template>
+
+    <style>
+
+        .year-label-container{
+            width: 10.25%;
+            margin-right: 2%;
+            background-color: rgba(255,255,255,0.75);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            cursor: pointer;
+            padding: 12px;
+        }
+
+        .year-label-container-active{
+            width: 10.25%;
+            background-color: #4a4a4a;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .year-label-container-active-hover{
+            width: 10.25%;
+            background-color: #4a4a4a;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .year-label-container-first{
+            width: 10.25%;
+            margin-left: 2%;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .year-label-container-last{
+            width: 10.25%;
+            margin-right: 2%;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .year-label{
+            text-align: center;
+            margin: 0;
+            font-size: 1vw;
+            align-self: center;
+        }
+
+        .year-label-active{
+            text-align: center;
+            margin: 0;
+            font-size: 1vw;
+            align-self: center;
+            color: white;
+        }
+
+        .year-label-active-hover{
+            text-align: center;
+            margin: 0;
+            font-size: 1vw;
+            align-self: center;
+            color: white;
+        }
+
+        #play-pause-year-button{
+            align-self: center;
+            background-color: #4a4a4a;
+            height: 3.5em;
+            width: 3.5em;
+            border-radius: 50%;
+            border: 0
+        }
+
+    </style>
+
+    <div style="width: 4.5em; height: 50%; display: flex; justify-content: center; align-content: flex-start; align-self: flex-end; background-color: transparent">
+        <img id="play-pause-year-button" src="img/side-bar-icon/play_icon.png">
+    </div>
+    <div class="w3-container" style="width: 80%; padding: 10px; height: 50%; display: flex; flex-direction: column; justify-content: center; align-content: center">
+
+        <div class="w3-light-grey w3-round" style="background-color: rgba(255,255,255,0.5) !important; height:0.25em; margin: 10px">
+            <div id="myBar" class="w3-container w3-round w3-blue" style="width:12.5%; background-color: #4a4a4a !important; padding: 0.125em 0em 0.125em 0em"></div>
+        </div>
+
+        <div style="display: flex; justify-content: center; align-content: space-around; height: 20%">
+
+            <div id="year-label-1" class="year-label-container year-label-container-active year-label-container-first">
+                <p class="year-label year-label-active">1989</p>
+            </div>
+            <div id="year-label-2" class="year-label-container">
+                <p class="year-label">1993</p>
+            </div>
+            <div id="year-label-3" class="year-label-container">
+                <p class="year-label">1997</p>
+            </div>
+            <div id="year-label-4" class="year-label-container">
+                <p class="year-label">2001</p>
+            </div>
+            <div id="year-label-5" class="year-label-container">
+                <p class="year-label">2005</p>
+            </div>
+            <div id="year-label-6" class="year-label-container">
+                <p class="year-label">2009</p>
+            </div>
+            <div id="year-label-7" class="year-label-container">
+                <p class="year-label">2013</p>
+            </div>
+            <div id="year-label-8" class="year-label-container year-label-container-last">
+                <p class="year-label">2017</p>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</template>
+<!--TODO: Progress bar 8 year template "8"-->
+
+
+<!--TODO: Progress bar 6 year template "9"-->
+<template>
+
+    <style>
+
+        .year-label-container{
+            width: 12%;
+            margin-right: 4%;
+            background-color: rgba(255,255,255,0.75);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            cursor: pointer;
+            padding: 12px;
+        }
+
+        .year-label-container-active{
+            width: 12%;
+            background-color: #4a4a4a;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .year-label-container-active-hover{
+            width: 12%;
+            background-color: #4a4a4a;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .year-label-container-first{
+            width: 12%;
+            margin-left: 4%;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .year-label-container-last{
+            width: 12%;
+            margin-right: 4%;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .year-label{
+            text-align: center;
+            margin: 0;
+            font-size: 1vw;
+            align-self: center;
+        }
+
+        .year-label-active{
+            text-align: center;
+            margin: 0;
+            font-size: 1vw;
+            align-self: center;
+            color: white;
+        }
+
+        .year-label-active-hover{
+            text-align: center;
+            margin: 0;
+            font-size: 1vw;
+            align-self: center;
+            color: white;
+        }
+
+        #play-pause-year-button{
+            align-self: center;
+            background-color: #4a4a4a;
+            height: 3.5em;
+            width: 3.5em;
+            border-radius: 50%;
+            border: 0
+        }
+
+    </style>
+
+    <div class="progress-bar-year-content" style="width: 4.5em; height: 50%; display: flex; justify-content: center; align-content: flex-start; align-self: flex-end; background-color: transparent">
+        <img id="play-pause-year-button" src="img/side-bar-icon/play_icon.png">
+    </div>
+    <div class="w3-container progress-bar-year-content" style="width: 80%; padding: 10px; height: 50%; display: flex; flex-direction: column; justify-content: center; align-content: center">
+
+        <div class="w3-light-grey w3-round" style="background-color: rgba(255,255,255,0.5) !important; height:0.25em; margin: 10px">
+            <div id="myBar" class="w3-container w3-round w3-blue" style="width:12.5%; background-color: #4a4a4a !important; padding: 0.125em 0em 0.125em 0em"></div>
+        </div>
+
+        <div style="display: flex; justify-content: center; align-content: space-around; height: 20%">
+
+            <div id="year-label-1" class="year-label-container year-label-container-active year-label-container-first">
+                <p class="year-label year-label-active">1987</p>
+            </div>
+            <div id="year-label-2" class="year-label-container">
+                <p class="year-label">1993</p>
+            </div>
+            <div id="year-label-3" class="year-label-container">
+                <p class="year-label">1999</p>
+            </div>
+            <div id="year-label-4" class="year-label-container">
+                <p class="year-label">2005</p>
+            </div>
+            <div id="year-label-5" class="year-label-container">
+                <p class="year-label">2011</p>
+            </div>
+            <div id="year-label-6" class="year-label-container year-label-container-last">
+                <p class="year-label">2017</p>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</template>
+<!--TODO: Progress bar 6 year template "9"-->
+
+
+<!--TODO: Drone video list card "10"-->
+<template>
+
+    <div id="drone-card-container" class="drone-card-container">
+
+        <div id="hero-image-drone-card" class="hero-image-drone-card">
+            <div id="hero-text-drone-card" class="hero-text-drone-card">
+                <h2 id="drone-card-video-title"></h2>
+                <p class="drone-card-video-description" id="drone-card-video-description"></p>
+            </div>
+        </div>
+
+        <video id="drone-card-video" src="" style="display: none;"></video>
+
+    </div>
+
+</template>
+<!--TODO: Drone video list card "10"-->
+
+
+<!--TODO: Template background data list right sidebar "11"-->
+<template>
+
+    <div class="app">
+
+        <style>
+
+            .side-bar-icon{
+
+                height: 27.5px;
+                width: 27.5px;
+                margin-right: 5%;
+
+            }
+
+            .side-bar-inner-icon{
+
+                height: 27.5px;
+                width: 27.5px;
+                /*margin-right: 10px;*/
+                margin-top: 0px;
+
+            }
+
+            #right-panel-toggle-button{
+                width: 25px;
+                height: 25px;
+                cursor: pointer;
+                align-self: center;
+            }
+
+            #side-bar-right-title{
+                font-size: 1vw;
+                width: 20%;
+                align-self: center;
+            }
+            .side-bar-right-title{
+                font-size: 1vw;
+                width: 20%;
+                align-self: center;
+            }
+            #left-side-bar-header{
+
+                display: flex;
+                justify-content: space-between;
+                align-content: center;
+
+            }
+
+        </style>
+
+        <aside class="sidebarRight" id="side-bar-right">
+
+            <header id="left-side-bar-header">
+                <span id="cita-panel-background-title" data-i18n="side-bar-right-title" class="panel-background-title panel-title-selected">Background Data</span>
+                <span id="cita-panel-cita-title" data-i18n="side-bar-left-title" class="panel-cita-title">CITA</span>
+                <img id="right-panel-toggle-button" src="img/side-bar-icon/arrow_left_icon.png">
+            </header>
+
+            <nav class="sidebar-nav">
+
+                <ul id="data-background-content-list">
+
+                </ul>
+
+            </nav>
+
+        </aside>
+
+    </div>
+
+</template>
+<!--TODO: Template background data list right sidebar "11"-->
+
+
+<!--TODO: Template background data list menu option "12"-->
+<template>
+
+    <link rel="stylesheet" href="css/map/horizontal-side-bar.css">
+
+    <li>
+        <a class="data-background-menu-button" id="data-background-menu-button" href="#">
+            <img id="data-background-menu-icon" class="side-bar-icon">
+            <span id="data-background-menu-title" class="data-background-menu-title"></span>
+            <img id="menu-arrow-bottom-image" src="img/side-bar-icon/arrow_bottom_icon.png" class="menu-arrow-bottom-image">
+        </a>
+
+        <ul class="nav-flyout nav-flyout-first-level" id="background-data-submenu-container">
+
+        </ul>
+
+    </li>
+
+</template>
+<!--TODO: Template background data list menu option "12"-->
+
+
+<!--TODO: Template background data list submenu option "13"-->
+<template>
+
+    <style>
+
+        .data-background-submenu-title{
+            font-size: 0.8vw;
+            width: 60%;
+            color: white;
+        }
+
+    </style>
+
+    <li id="background-data-submenu-option">
+        <a class="background-data-submenu-option-button" id="background-data-submenu-option-button">
+            <img id="data-background-submenu-icon" class="side-bar-inner-icon" style="display: hidden;">
+            <span id="data-background-submenu-title" class="data-background-submenu-title" data-i18n="submenu-language-test"></span>
+            <img id="background-submenu-arrow-bottom-image" src="img/side-bar-icon/arrow_bottom_icon.png" class="menu-arrow-bottom-image">
+        </a>
+
+        <ul class="nav-flyout nav-flyout-second-level" id="background-data-second-level-submenu-container">
+
+        </ul>
+
+    </li>
+
+</template>
+<!--TODO: Template background data list submenu option "13" -->
+
+
+<!--TODO: Template dropdown button option "14"-->
+<template>
+    <button class="dropdown-item" type="button"></button>
+</template>
+<!--TODO: Template dropdown button option "14"-->
+
+
+<!--TODO: Template upper dancing rivers logo "15"-->
+<template>
+    <img id="dancing-rivers-logo-overlay" src="img/Piura/logos/dancing_rivers_english.png">
+</template>
+<!--TODO: Template upper CITA logo "15"-->
+
+
+<!--TODO: Template original data list second level submenu option "16"-->
+<template>
+
+    <style>
+
+        .data-original-second-level-submenu-title{
+            font-size: 0.8vw;
+            width: 60%;
+        }
+
+        .side-bar-inner-icon-second-level{
+            margin-left: calc(27.5px + 10%);
+        }
+
+    </style>
+
+    <li id="original-data-second-level-submenu-option">
+
+        <a class="original-data-submenu-option-button" id="original-data-second-level-submenu-option-button">
+            <img id="data-original-second-level-submenu-icon" class="side-bar-inner-icon side-bar-inner-icon-second-level">
+            <span id="data-original-second-level-submenu-title" class="data-original-second-level-submenu-title"></span>
+            <img src="img/side-bar-icon/arrow_bottom_icon.png" class="menu-arrow-bottom-image" style="visibility: hidden">
+        </a>
+
+    </li>
+
+</template>
+<!--TODO: Template original data list second level submenu option "16"-->
+
+
+
+<!--TODO: Template water level dropdown option "17"-->
+<template>
+
+    <button class="dropdown-item" type="button"></button>
+
+</template>
+<!--TODO: Template water level dropdown option "17"-->
+
+<!--TODO: Template extra legend "18"-->
+<template>
+
+    <style>
+
+        .extraLegendDIVStyle {
+
+            height: 16.25%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+            /*background-color: #4a4a4a;*/
+
+        }
+
+        .extraLegendIMGStyle {
+
+            width: 16.25%;
+            height: 80%;
+            margin-right: 5%;
+
+        }
+
+        .extraLegendSPANStyle {
+
+            width: 55%;
+            font-size: 10px;
+            /*color: rgba(0,0,0,0.7);*/
+            text-align: center;
+            /*font-weight: bold;*/
+            color: white;
+            /*color: rgba(33,37,41,1.0);*/
+
+
+        }
+
+    </style>
+
+    <div id="extra-legend-subcontainer" class="extraLegendDIVStyle">
+        <img id="extra-legend-image" class="extraLegendIMGStyle"><span id="extra-legend-span" class="extraLegendSPANStyle"></span>
+    </div>
+
+</template>
+<!--TODO: Template extra legend "18"-->
+
+<!--TODO: Template background legend "19"-->
+<template>
+
+    <style>
+
+        .backgroundLegendDIVStyle {
+
+            height: 16.25%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+            /*background-color: #4a4a4a;*/
+
+        }
+
+        .backgroundLegendIMGStyle {
+
+            width: 16.25%;
+            height: 80%;
+            margin-right: 5%;
+
+        }
+
+        .backgroundLegendSPANStyle {
+
+            width: 55%;
+            font-size: 10px;
+            /*color: rgba(0,0,0,0.7);*/
+            text-align: center;
+            /*font-weight: bold;*/
+            color: white;
+            /*color: rgba(33,37,41,1.0);*/
+
+
+        }
+
+    </style>
+
+    <div id="background-legend-subcontainer" class="backgroundLegendDIVStyle">
+        <img id="background-legend-image" class="backgroundLegendIMGStyle"><span id="background-legend-span" class="backgroundLegendSPANStyle"></span>
+    </div>
+
+</template>
+<!--TODO: Template background legend "19"-->
+
+<!--TODO: Migration Progress bar 8 year template "20"-->
+<template>
+
+    <style>
+
+        .year-label-container{
+            width: 10.25%;
+            margin-right: 2%;
+            background-color: rgba(255,255,255,0.75);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            cursor: pointer;
+            padding: 12px;
+        }
+
+        .year-label-container-active{
+            width: 10.25%;
+            background-color: #4a4a4a;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .year-label-container-active-hover{
+            width: 10.25%;
+            background-color: #4a4a4a;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .year-label-container-first{
+            width: 10.25%;
+            margin-left: 2%;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .year-label-container-last{
+            width: 10.25%;
+            margin-right: 2%;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .year-label{
+            text-align: center;
+            margin: 0;
+            font-size: 0.6vw;
+            align-self: center;
+        }
+
+        .year-label-active{
+            text-align: center;
+            margin: 0;
+            font-size: 0.6vw;
+            align-self: center;
+            color: white;
+        }
+
+        .year-label-active-hover{
+            text-align: center;
+            margin: 0;
+            font-size: 0.6vw;
+            align-self: center;
+            color: white;
+        }
+
+        #play-pause-year-button{
+            align-self: center;
+            background-color: #4a4a4a;
+            height: 3.5em;
+            width: 3.5em;
+            border-radius: 50%;
+            border: 0
+        }
+
+    </style>
+
+    <div style="width: 4.5em; height: 50%; display: flex; justify-content: center; align-content: flex-start; align-self: flex-end; background-color: transparent">
+        <img id="play-pause-year-button" src="img/side-bar-icon/play_icon.png">
+    </div>
+    <div class="w3-container" style="width: 80%; padding: 10px; height: 50%; display: flex; flex-direction: column; justify-content: center; align-content: center">
+
+        <div class="w3-light-grey w3-round" style="background-color: rgba(255,255,255,0.5) !important; height:0.25em; margin: 10px">
+            <div id="myBar" class="w3-container w3-round w3-blue" style="width:12.5%; background-color: #4a4a4a !important; padding: 0.125em 0em 0.125em 0em"></div>
+        </div>
+
+        <div style="display: flex; justify-content: center; align-content: space-around; height: 20%">
+
+            <div id="year-label-1" class="year-label-container year-label-container-active year-label-container-first">
+                <p class="year-label year-label-active">1987/1989</p>
+            </div>
+            <div id="year-label-2" class="year-label-container">
+                <p class="year-label">1989/1993</p>
+            </div>
+            <div id="year-label-3" class="year-label-container">
+                <p class="year-label">1993/1997</p>
+            </div>
+            <div id="year-label-4" class="year-label-container">
+                <p class="year-label">1997/2001</p>
+            </div>
+            <div id="year-label-5" class="year-label-container">
+                <p class="year-label">2001/2005</p>
+            </div>
+            <div id="year-label-6" class="year-label-container">
+                <p class="year-label">2005/2009</p>
+            </div>
+            <div id="year-label-7" class="year-label-container">
+                <p class="year-label">2009/2013</p>
+            </div>
+            <div id="year-label-8" class="year-label-container year-label-container-last">
+                <p class="year-label">2013/2017</p>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</template>
+<!--TODO: Migration Progress bar 8 year template "20"-->
+
+<body>
+
+    <!--TODO: Page main container-->
+    <div id="main-wrapper">
+
+        <!--TODO: Google Maps DIV-->
+        <div id="map"></div>
+        <!--TODO: Google Maps DIV-->
+
+        <!--TODO: General process loader-->
+        <div id="general-loader-container">
+            <div id="general-loader"></div>
+        </div>
+        <!--TODO: General process loader-->
+
+        <!--TODO: CITA Logo container -->
+        <div id="logo-template-container"></div>
+        <!--TODO: CITA Logo container -->
+
+        <!--TODO: Dancing Rivers Logo container -->
+        <div id="dancing-rivers-logo-template-container"></div>
+        <!--TODO: Dancing Rivers Logo container -->
+
+        <!--TODO: Clear map button container -->
+        <div id="clear-map-container">
+            <img id="clear-map-button" src="img/side-bar-icon/clear_map_icon.png">
+        </div>
+        <!--TODO: Clear map button container -->
+
+        <!--TODO: Spanish button container -->
+        <div id="spanish-button-container">
+            <img id="spanish-button" src="img/side-bar-icon/spanish_language_icon.png">
+        </div>
+        <!--TODO: Spanish button container -->
+
+        <!--TODO: English button container -->
+        <div id="english-button-container">
+            <img id="english-button" src="img/side-bar-icon/english_language_enabled_icon.png">
+        </div>
+        <!--TODO: English button container -->
+
+        <!--TODO: Original data container (left panel)-->
+        <div id="data-original-container"></div>
+        <!--TODO: Original data container (left panel)-->
+
+
+
+        <!--TODO: Background data container (right panel)-->
+        <div id="data-background-container"></div>
+        <!--TODO: Background data container (right panel)-->
+
+        <!--TODO: Morphometrics Legend container-->
+        <div id="morphometrics-legend-container">
+            <div id="legend-content">
+
+                <div style="width: 100%; height: 18%; padding-top: 1.5%; padding-bottom: 1.5%; margin-bottom: 7%; background-color: rgba(240,240,240,1.0); display: flex; justify-content: center; align-content: center; border-top-left-radius: 10px; border-top-right-radius: 10px">
+                    <p data-i18n="legend-morphometrics-title" style="color: rgba(33,37,41,1.0); align-self: center; margin: 0"></p>
+                </div>
+
+            </div>
+        </div>
+        <!--TODO: Morphometrics Legend container-->
+
+
+
+        <!--TODO: Extra Legend container-->
+        <div id="extra-legend-container">
+            <div id="extra-legend-content">
+
+                <div style="width: 100%; height: 18%; padding-top: 1.5%; padding-bottom: 1.5%; margin-bottom: 7%; background-color: rgba(240,240,240,1.0); display: flex; justify-content: center; align-content: center; border-top-left-radius: 10px; border-top-right-radius: 10px">
+                    <p data-i18n="legend-morphometrics-title" style="color: rgba(33,37,41,1.0); align-self: center; margin: 0"></p>
+                </div>
+
+            </div>
+        </div>
+        <!--TODO: Extra Legend container-->
+
+        <!--TODO: Background Legend container-->
+        <div id="background-legend-container">
+            <div id="background-legend-content">
+
+                <div style="width: 100%; height: 18%; padding-top: 1.5%; padding-bottom: 1.5%; margin-bottom: 7%; background-color: rgba(240,240,240,1.0); display: flex; justify-content: center; align-content: center; border-top-left-radius: 10px; border-top-right-radius: 10px">
+                    <p data-i18n="legend-morphometrics-title" style="color: rgba(33,37,41,1.0); align-self: center; margin: 0"></p>
+                </div>
+
+            </div>
+        </div>
+        <!--TODO: Background Legend container-->
+
+
+
+
+
+        <!--TODO: River not selected tooltip HIDDEN FOR NOW-->
+        <div id="help-tooltip">
+
+            <style>
+                .help-tooltip-style{
+                    margin: 0;
+                    font-size: 1.25vw
+                }
+            </style>
+            <p class="help-tooltip-style" data-i18n="help-tooltip-text">Select a river</p>
+        </div>
+        <!--TODO: River not selected tooltip HIDDEN FOR NOW-->
+
+        <!--TODO:Progress bar container (timeline)-->
+        <div id="progress-bar-container"></div>
+        <!--TODO:Progress bar container (timeline)-->
+
+        <!--TODO: Drone flights cards-->
+        <div id="drone-flights-card-container">
+
+            <style>
+
+                .hero-image-drone-card {
+                    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+                    /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/index/landing_image.png");*/
+
+                    /* Set a specific height */
+                    height: 100%;
+                    width: 100%;
+
+                    /* Position and center the image to scale nicely on all screens */
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    position: relative;
+                    cursor: pointer;
+                    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+
+                }
+
+                .hero-image-drone-card:hover{
+                    filter: brightness(2.0);
+                }
+
+                .hero-text-drone-card {
+                    text-align: center;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    color: white;
+                    font-family: Verdana, sans-serif;
+                }
+
+                .drone-flights-card-container-close-button:hover{
+                    filter: brightness(2.0);
+                }
+
+                .drone-video-hero-card{
+
+                    background-color: transparent;
+                    height: 33.3vh;
+                    padding: 0;
+                    /*padding: 10px 10px 10px 20px; */
+                    /*border-radius: 10px*/
+                }
+
+                .drone-card-container{
+
+                    width: 33.33%;
+                    height: 33.3vh;
+                    float: left;
+                    background-color: red;
+                    display: inline
+
+                }
+
+                .drone-card-video-description{
+
+                    font-style: italic;
+                    font-size: 17px;
+                    font-family: Verdana, sans-serif
+
+                }
+
+            </style>
+
+            <div class="row" style="height: 5vh; width: 100vw; margin: 30px 10px 50px 10px">
+
+                <div class="col-md-12" style="display: flex; justify-content: center; align-content: center;">
+
+                    <h2 style="width: 95%; height: 90%; align-self: center; color: white; margin: 0" data-i18n="drone-flights-card-container-title">Drone flights</h2>
+                    <img id="drone-flights-card-container-close-button" class="drone-flights-card-container-close-button" src="img/side-bar-icon/cross_icon.png" style="width: 50px; height: 50px; align-self: center">
+
+                </div>
+
+            </div>
+
+        </div>
+        <!--TODO: Drone flights cards-->
+
+        <!--TODO: Drone Marker click container-->
+        <div id="drone-flights-marker-click-container">
+
+            <style>
+
+                /* The hero image */
+                .hero-image {
+                    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+                    /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/index/landing_image.png");*/
+
+                    /* Set a specific height */
+                    height: 100%;
+                    width: 100%;
+
+                    /* Position and center the image to scale nicely on all screens */
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    position: relative;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+
+                }
+
+                .hero-image:hover{
+                    filter: brightness(2.0);
+                }
+
+
+                /* Place text in the middle of the image */
+                .hero-text {
+                    text-align: center;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    color: white;
+                    font-family: Verdana, sans-serif;
+                }
+
+                .drone-flights-card-container-close-button:hover{
+                    filter: brightness(2.0);
+                }
+
+            </style>
+
+            <div id="card-1-marker-row-1" style="background-color: transparent; height: 100%; width: 100%; border-radius: 10px; visibility: hidden">
+
+                <div class="hero-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/bottom-cards-images/card_1.JPG'); cursor: zoom-in">
+                    <div class="hero-text">
+                        <h3 id="card-1-marker-row-1-title" style="font-family: Verdana, sans-serif">Drone Flight A</h3>
+                        <p style="font-style: italic; font-size: 17px; font-family: Verdana, sans-serif" id="card-1-marker-row-1-location">Pucallpa, Perú</p>
+                    </div>
+                </div>
+
+                <video id="card-1-row-1-video" style="display: none;"></video>
+
+            </div>
+
+        </div>
+        <!--TODO: Drone Marker click container-->
+
+        <!--TODO: LSPIV Marker click container-->
+        <div id="lspiv-marker-click-container">
+
+            <style>
+
+                .hero-image-lspiv {
+
+                    height: 100%;
+                    width: 100%;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    position: relative;
+                    border-radius: 10px;
+                    cursor: zoom-in;
+                    background-image: linear-gradient(rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 1.0));
+
+                }
+
+                .hero-text-lspiv {
+                    text-align: center;
+                    position: absolute;
+                    top: 3.5%;
+                    left: 3.5%;
+                    color: white;
+                }
+
+            </style>
+
+            <div id="lspiv-marker-card" style="background-color: transparent; height: 100%; width: 100%; border-radius: 10px;">
+
+                <div id="lspiv-marker-card-image" class="hero-image-lspiv">
+                    <div class="hero-text-lspiv">
+                        <h5 id="lspiv-marker-card-title" style="margin: 0"></h5>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!--TODO: LSPIV Marker click container-->
+
+        <!--TODO: Drone video animation click container-->
+        <div id="drone-video-animation-click-container" style="display: none">
+
+            <div style="background-color: transparent; height: 100%; width: 100%; border-radius: 10px;">
+                <video id="drone-animation-video" style="border-radius: 10px" height="100%" width="100%" autoplay muted></video>
+            </div>
+
+        </div>
+        <!--TODO: Drone video animation click container-->
+
+        <!--TODO: Water Level Cards-->
+        <div id="water-level-card-container" style="z-index: 100">
+
+            <div style="width: 100%; height: 100%; margin-right: 0%; display: flex; flex-direction: column; align-content: center; justify-content: center">
+
+                <div style="background-color: transparent; width: 90%; height: 15%; margin-bottom: 2%; align-self: center; display: flex; align-content: center; justify-content: center">
+
+                    <div style="height: 100%; width: 60%; display: flex; align-content: center; justify-content: center; margin-right: 10%">
+                        <p id="water-level-card-location" style="overflow: hidden; font-size: 1vw; width: 100%; height: 100%;  margin-bottom: 0; padding: 5% 5% 5% 0"></p>
+                    </div>
+
+                    <div style="background-color: transparent; width: 30%; height: 100%; display: flex; align-content: center; justify-content: center">
+
+                        <div class="dropdown" style="height: 100%; width: 100%; display: flex">
+                            <button style="width: 100%; height: 70%; font-size: 1vw; border-radius: 10px" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonWaterlevel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Enapu
+                            </button>
+                            <div id="dropdownWaterlevelOptions" class="dropdown-menu" aria-labelledby="dropdownMenuButtonWaterlevel" style="overflow-x: hidden; height: auto; max-height: 200px; z-index: 1000000">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div id="water-level-card-image-container" style="background-color: transparent; width: 90%; height: 75%; align-self: center; display: flex; align-content: center; justify-content: center">
+                    <img id="water-level-card-image" src="" height="100%" width="100%" style="z-index: 100003; cursor:zoom-in;">
+                </div>
+
+
+            </div>
+            <!--<div style="width: 5%; height: 100%; background-color: #E7402B"></div>-->
+
+        </div>
+        <!--TODO: Water Level Cards-->
+
+        <!--TODO: UHD Cards-->
+        <div id="UHD-top-card-container" style="z-index: 100">
+
+            <div style="width: 95%; height: 100%; margin-right: 0%; display: flex; flex-direction: column; align-content: center; justify-content: center">
+
+                <div style="background-color: transparent; width: 90%; height: 15%; margin-bottom: 2%; align-self: center; display: flex; align-content: center; justify-content: center">
+
+                    <div style="height: 100%; width: 60%; display: flex; align-content: center; justify-content: center; margin-right: 10%">
+
+                        <p id="UHD-marker-top-card-location" style="overflow: hidden; font-size: 1vw; width: 100%; height: 100%;  margin-bottom: 0; padding: 5% 5% 5% 0"></p>
+
+                    </div>
+
+                    <div style="background-color: transparent; width: 30%; height: 100%; display: flex; align-content: center; justify-content: center">
+
+                        <div class="dropdown" style="height: 100%; width: 100%; display: flex">
+                            <button style="width: 100%; height: 70%; font-size: 1vw; border-radius: 10px" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonTop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Section 1
+                            </button>
+                            <div id="dropdown-uhd-top-buttons-container" class="dropdown-menu" aria-labelledby="dropdownMenuButtonTop" style="overflow-x: hidden; height: auto; max-height: 200px; z-index: 1000000"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div id="UHD-top-card-image-container" style="background-color: transparent; width: 90%; height: 75%; align-self: center; display: flex; align-content: center; justify-content: center">
+                    <img id="UHD-top-card-image" src="" height="100%" width="100%" style="z-index: 100003; cursor: zoom-in">
+                </div>
+
+
+            </div>
+            <div style="width: 5%; height: 100%; background-color: #E7402B"></div>
+
+        </div>
+
+        <div id="UHD-bottom-card-container" style="z-index: 100">
+
+            <div style="width: 95%; height: 100%; margin-right: 0%; display: flex; flex-direction: column; align-content: center; justify-content: center">
+
+                <div style="background-color: transparent; width: 90%; height: 15%; margin-bottom: 2%; align-self: center; display: flex; align-content: center; justify-content: center">
+
+                    <div style="height: 100%; width: 60%; display: flex; align-content: center; justify-content: center; margin-right: 10%">
+
+                        <p id="UHD-marker-bottom-card-location" style="overflow: hidden; font-size: 1vw; width: 100%; height: 100%;  margin-bottom: 0; padding: 5% 5% 5% 0"></p>
+
+                    </div>
+
+                    <div style="background-color: transparent; width: 30%; height: 100%; display: flex; align-content: center; justify-content: center">
+
+                        <div class="dropdown" style="height: 100%; width: 100%; display: flex">
+                            <button style="width: 100%; height: 70%; font-size: 1vw; border-radius: 10px" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonBottom" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Section 1
+                            </button>
+                            <div id="dropdown-uhd-bottom-buttons-container" class="dropdown-menu" aria-labelledby="dropdownMenuButtonBottom" style="overflow-x: hidden; height: auto; max-height: 200px; z-index: 100000"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div id="UHD-bottom-card-image-container" style="background-color: transparent; width: 90%; height: 75%; align-self: center; display: flex; align-content: center; justify-content: center">
+                    <img id="UHD-bottom-card-image" src="img/cross_sections_images/huallaga/hua_uhd1.png" height="100%"; width="100%" style="cursor: zoom-in;">
+                </div>
+
+
+            </div>
+            <div style="width: 5%; height: 100%; background-color: #0097CE"></div>
+
+        </div>
+        <!--TODO: UHD Cards-->
+
+        <!--TODO: Dunes Cards-->
+        <div id="dunes-card-container" style="z-index: 100">
+
+            <div style="width: 100%; height: 100%; margin-right: 0%; display: flex; flex-direction: column; align-content: center; justify-content: center">
+
+                <div style="background-color: transparent; width: 90%; height: 10%; align-self: center; display: flex; align-content: center; justify-content: center; margin-bottom: 20px">
+
+                    <div style="height: 70%; width: 60%; display: flex; align-content: center; justify-content: center; margin-right: 10%; align-self: center">
+                        <!--<p id="dunes-card-title" style="height: 100%; margin: 0; text-align: left">Location</p>-->
+                        <p id="dunes-card-title" style="height: 100%; margin: 0; text-align: left">Location</p>
+                    </div>
+                    <div style="background-color: transparent; width: 30%; height: 100%; display: flex; align-content: center; justify-content: center">
+
+                        <div class="dropdown" style="height: 100%; width: 100%; display: flex">
+                            <button style="width: 100%; height: 80%; font-size: 1vw; border-radius: 10px" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuDunesLines" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Profile 1
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuDunesLines" style="overflow-x: hidden; height: auto; max-height: 200px; z-index: 1000000">
+                                <button class="dropdown-item" type="button" name="1">Profile 1</button>
+                                <button class="dropdown-item" type="button" name="2">Profile 2</button>
+                                <button class="dropdown-item" type="button" name="3">Profile 3</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="dunes-top-image-container" style="background-color: transparent; width: 90%; height: 70%; align-self: center; display: flex; flex-direction: column; align-content: center; justify-content: center">
+                    <img id="dunes-top-card-image" src="" height="80%" width="100%" style="z-index: 100003; cursor: zoom-in; margin-bottom: 10px">
+                    <p id="dunes-top-card-title" style="height: 10%; margin: 0; text-align: center; margin-bottom: 10px">Day 1</p>
+                    <p id="dunes-bottom-card-title" style="height: 10%; margin: 0; text-align: center; margin-bottom: 10px; color: red">Day 2</p>
+                </div>
+
+                <!--<div id="dunes-bottom-image-container" style="background-color: transparent; width: 90%; height: 40%; align-self: center; display: flex; flex-direction: column; align-content: center; justify-content: center">-->
+                    <!--<p id="dunes-bottom-card-title" style="height: 10%; margin: 0; text-align: center; margin-bottom: 10px">Day 2</p>-->
+                    <!--<img id="dunes-bottom-card-image" src="img/cross_sections_images/huallaga/Section%201.png" height="80%" width="100%" style="z-index: 100003; cursor: zoom-in">-->
+                <!--</div>-->
+
+            </div>
+
+        </div>
+        <!--TODO: Dunes Cards-->
+
+        <!--TODO: Bedload Cards-->
+        <div id="bedload-card-container" style="z-index: 100">
+
+            <div style="width: 100%; height: 100%; margin-right: 0%; display: flex; flex-direction: column; align-content: center; justify-content: center">
+
+                <div style="background-color: transparent; width: 90%; height: 10%; align-self: center; display: flex; align-content: center; justify-content: center">
+
+                    <div style="height: 70%; width: 60%; display: flex; align-content: center; justify-content: center; margin-right: 10%; align-self: center">
+                        <!--<p id="bedload-card-title" style="height: 100%; margin: 0; text-align: left">Location</p>-->
+                        <p id="bedload-card-title" style="height: 100%; margin: 0; text-align: left"></p>
+                    </div>
+
+                    <div style="background-color: transparent; width: 30%; height: 100%; display: flex; align-content: center; justify-content: center">
+
+                        <div class="dropdown" style="height: 100%; width: 100%; display: flex">
+                            <button style="width: 100%; height: 90%; font-size: 1vw; border-radius: 10px" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuBedloadCampaign" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Feb/18
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuBedloadCampaign" style="overflow-x: hidden; height: auto; max-height: 200px; z-index: 1000000">
+                                <button class="dropdown-item" type="button" name="1">Feb/18</button>
+                                <button class="dropdown-item" type="button" name="2">Aug/18</button>
+                                <button class="dropdown-item" type="button" name="3">Feb/19</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="bedload-image-container" style="background-color: transparent; width: 90%; height: 70%; align-self: center; display: flex; flex-direction: column; align-content: center; justify-content: center">
+                    <p id="bedload-image-card-title" style="height: 10%; margin: 0; text-align: center; margin-bottom: 10px">Bedload</p>
+                    <img id="bedload-card-image" src="" height="80%" width="100%" style="z-index: 100003; cursor: zoom-in">
+                </div>
+
+            </div>
+
+        </div>
+        <!--TODO: Bedload Cards-->
+
+        <!--TODO: Sediments Cards-->
+        <div id="sediments-card-container" style="z-index: 100">
+
+            <div style="width: 100%; height: 100%; margin-right: 0%; display: flex; flex-direction: column; align-content: center; justify-content: center">
+
+                <div style="background-color: transparent; width: 90%; height: 10%; align-self: center; display: flex; align-content: center; justify-content: center">
+
+                    <div style="height: 70%; width: 28%; display: flex; align-content: center; justify-content: center; margin-right: 4%; align-self: center">
+                        <!--<p id="sediments-card-title" style="height: 100%; margin: 0; text-align: left">Location</p>-->
+                        <p id="sediments-card-title" style="height: 100%; margin: 0; text-align: left"></p>
+                    </div>
+
+                    <div style="background-color: transparent; width: 28%; height: 100%; display: flex; align-content: center; justify-content: center; margin-right: 4%">
+
+                        <div class="dropdown" style="height: 100%; width: 100%; display: flex">
+                            <button style="width: 100%; height: 90%; font-size: 1vw; border-radius: 10px" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuSediments" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Feb/18
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuSediments" style="overflow-x: hidden; height: auto; max-height: 200px; z-index: 1000000">
+                                <button class="dropdown-item" type="button" name="1">Feb/18</button>
+                                <button class="dropdown-item" type="button" name="2">Aug/18</button>
+                                <button class="dropdown-item" type="button" name="3">Feb/19</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div style="height: 100%; width: 28%; display: flex; align-content: center; justify-content: center">
+                        <img id="sediments-card-size-button" title="Size" style="height: 35px; width: 35px; border-radius: 50%; margin-right: 10%; cursor: pointer" src="img/side-bar-icon/sediment_size_button_enabled_icon.png">
+                        <img id="sediments-card-concentration-button" title="Concentration" style="height: 35px; width: 35px; border-radius: 50%; cursor: pointer" src="img/side-bar-icon/sediment_concentration_button_icon.png">
+                    </div>
+
+                </div>
+
+                <div id="sediments-image-container" style="background-color: transparent; width: 90%; height: 70%; align-self: center; display: flex; flex-direction: column; align-content: center; justify-content: center">
+                    <!--<p id="sediments-image-card-title" style="height: 10%; margin: 0; text-align: center; margin-bottom: 10px">Bedload</p>-->
+                    <img id="sediments-card-image" src="" height="80%" width="100%" style="z-index: 100003; cursor: zoom-in">
+                </div>
+
+            </div>
+
+        </div>
+        <!--TODO: Sediments Cards-->
+
+        <!--TODO: Bottom left container-->
+        <div id="map-bottom-left-container">
+
+            <div id="map-bottom-left-inner-container" style="background-color: rgba(255,255,255,0.75); display: flex; flex-direction: column; align-content: center; justify-content: center; width: 80%; border-radius: 10px; padding: 20px;">
+
+                <p data-i18n="coordinates-hover-container-title" style="font-weight: bold; text-align: center"></p>
+                <p id="bottom-left-coordinates-lat" style="color: rgba(0,0,0,0.75); margin: 0; text-align: left"></p>
+                <p id="bottom-left-coordinates-lng" style="color: rgba(0,0,0,0.75); margin: 0; text-align: left"></p>
+
+            </div>
+
+        </div>
+        <!--TODO: Bottom left container-->
+
+
+        <!--TODO: Morphometrics overlay container -->
+        <!--TODO: shows up when cursor hovers on a river polygon -->
+        <div id="metricsContainer" style="background-color: rgba(255,255,255,0.75)">
+
+            <p data-i18n="metrics-container-title" style="font-weight: bold"></p>
+            <p id="metricsTextWidth" style="color: rgba(0,0,0,0.75); margin: 0; text-align: left"></p>
+            <p id="metricsTextSin" style="color: rgba(0,0,0,0.75); margin: 0; text-align: left"></p>
+            <p id="metricsTextWave" style="color: rgba(0,0,0,0.75); margin: 0; text-align: left"></p>
+
+        </div>
+        <!--TODO: shows up when cursor hovers on a river polygon -->
+        <!--TODO: Morphometrics overlay container -->
+
+
+        <!--TODO: Image zoom overlay container-->
+        <!--TODO: shown when a card image is clicked (shows a zoom version of the clicked image)-->
+        <div id="imageZoomOverlay">
+
+            <div style="background-color: rgba(255,255,255,0.9); width: 80%; height: 90%">
+                <img id="imageZoom" src="" style="min-height: 100%; min-width: 100%; background-size: cover; height: 100%; width: 100%">
+            </div>
+
+        </div>
+        <!--TODO: shown when a card image is clicked (shows a zoom version of the clicked image)-->
+        <!--TODO: Image zoom overlay container-->
+
+
+        <!--TODO: Drone video overlay-->
+        <!--TODO: shown after pressing the drone button, shows an overlay with a play & close button to control the video-->
+        <div id="droneVideoOverlay" style="visibility: hidden;">
+
+            <div id="drone-video-overlay-controls" style="display: flex; align-content: center; justify-content: space-evenly; height: 5%; width: 10%; position: absolute; top: 10px; right: 10px; z-index: 5000; background-color: rgba(255,255,255,0.25); border-radius: 15px">
+                <img id="drone-overlay-play-button" src="img/side-bar-icon/play_video_control_icon.png" style="height: 30px; width: 30px; align-self: center">
+                <img id="drone-overlay-information-button" src="img/side-bar-icon/information_icon.png" style="height: 30px; width: 30px; align-self: center">
+                <img id="drone-overlay-close-button" src="img/side-bar-icon/cross_video_control_icon.png" style="height: 30px; width: 30px; align-self: center">
+            </div>
+
+            <video id="drone-video-source" loop id="myVideo" style="display: block; z-index: 3000">
+                <source type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+
+            <div id="videoFooter" class="content" style="display: block; z-index: 3000">
+
+                <h1 id="drone-overlay-video-title" style="font-family: Verdana, sans-serif">Drone Video</h1>
+                <p id="drone-overlay-video-description">Drone flights recorded by CITA team.</p>
+                <!--<button id="myBtn" onclick="myFunction()">Play</button>-->
+                <!--<button id="myBtnClose" onclick="myFunctionClose()">Close</button>-->
+
+            </div>
+
+        </div>
+        <!--TODO: shown after pressing the drone button, shows an overlay with a play & close button to control the video-->
+        <!--TODO: Drone video overlay-->
+
+
+        <div id="migration-river-legend">
+
+        </div>
+
+
+    </div>
+    <!--TODO: Page main container-->
+
+    <!--TODO: Page splash loader-->
+    <div id="loading"></div>
+    <!--TODO: Page splash loader-->
+
+
+
+    <!--TODO: Visualizer full logic-->
+    <script type="text/javascript" src="js/map/visualizer_colors.js"></script>
+    <script type="text/javascript" src="js/map/visualizer_cita_data.js"></script>
+    <script type="text/javascript" src="js/map/visualizer_background_data.js"></script>
+    <script type="text/javascript" src="js/map/visuzalizer_data_layers.js"></script>
+    <script type="text/javascript" src="js/map/visualizer_dom_handle.js"></script>
+    <script type="text/javascript" src="js/map/visualizer_google_maps.js"></script>
+    <script type="text/javascript" src="js/map/visualizer_main.js"></script>
+    <script type="text/javascript" src="js/map/visualizer_development_test.js"></script>
+    <script type="text/javascript" src="js/map/visualizer_drone_logic.js"></script>
+    <!--TODO: Visualizer full logic-->
+
+    <!--TODO: Language handler logic-->
+    <!--<script type="text/javascript" src="js/index/language_handler_logic.js"></script>-->
+    <!--TODO: Language handler logic-->
+
+    <!--TODO: Video player logic JS script-->
+    <script type="text/javascript" src="js/map/drone-overlay-logic.js"></script>
+    <!--TODO: Video player logic JS script-->
+
+    <!--&lt;!&ndash;TODO: Language dependencies JS script&ndash;&gt;-->
+    <!--<script src="./lib/CLDRPluralRuleParser/CLDRPluralRuleParser.js"></script>-->
+    <!--<script src="./lib/jquery.i18n/jquery.i18n.js"></script>-->
+    <!--<script src="./lib/jquery.i18n/jquery.i18n.messagestore.js"></script>-->
+    <!--<script src="./lib/jquery.i18n/jquery.i18n.fallbacks.js"></script>-->
+    <!--<script src="./lib/jquery.i18n/jquery.i18n.language.js"></script>-->
+    <!--<script src="./lib/jquery.i18n/jquery.i18n.parser.js"></script>-->
+    <!--<script src="./lib/jquery.i18n/jquery.i18n.emitter.js"></script>-->
+    <!--<script src="./lib/jquery.i18n/jquery.i18n.emitter.bidi.js"></script>-->
+    <!--<script src="./lib/history/jquery.history.js"></script>-->
+    <!--<script src="./lib/url/url.min.js"></script>-->
+    <!--&lt;!&ndash;TODO: Language dependencies JS script&ndash;&gt;-->
+
+    <!--&lt;!&ndash;TODO: Language handler logic&ndash;&gt;-->
+    <!--<script type="text/javascript" src="js/index/language_handler_logic.js"></script>-->
+    <!--&lt;!&ndash;TODO: Language handler logic&ndash;&gt;-->
+
+    <!--TODO: Google maps geometry library-->
+    <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAq3F5ugcDYAm1NwcZ1gQL4IIszRpQmm_k&libraries=geometry"></script>-->
+    <!--TODO: Google maps geometry library-->
+
+    <!--&lt;!&ndash;TODO: Marker path animation &ndash;&gt;-->
+    <!--<script type="text/javascript" src="js/map/animate-marker-path.js"></script>-->
+    <!--&lt;!&ndash;TODO: Marker path animation &ndash;&gt;-->
+
+    <!--TODO: Google maps map async load-->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAq3F5ugcDYAm1NwcZ1gQL4IIszRpQmm_k&callback=initMap&libraries=geometry"></script>
+    <!--TODO: Google maps map async load-->
+
+</body>
+
+<!--TODO: Language dependencies JS script-->
+<script src="./lib/CLDRPluralRuleParser/CLDRPluralRuleParser.js"></script>
+<script src="./lib/jquery.i18n/jquery.i18n.js"></script>
+<script src="./lib/jquery.i18n/jquery.i18n.messagestore.js"></script>
+<script src="./lib/jquery.i18n/jquery.i18n.fallbacks.js"></script>
+<script src="./lib/jquery.i18n/jquery.i18n.language.js"></script>
+<script src="./lib/jquery.i18n/jquery.i18n.parser.js"></script>
+<script src="./lib/jquery.i18n/jquery.i18n.emitter.js"></script>
+<script src="./lib/jquery.i18n/jquery.i18n.emitter.bidi.js"></script>
+<script src="./lib/history/jquery.history.js"></script>
+<script src="./lib/url/url.min.js"></script>
+<!--TODO: Language dependencies JS script-->
+
+<!--TODO: Language handler logic-->
+<script type="text/javascript" src="js/index/language_handler_logic.js"></script>
+<!--TODO: Language handler logic-->
+
+</html>

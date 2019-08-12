@@ -1,0 +1,528 @@
+
+/*::-webkit-scrollbar{*/
+    /*width: 2px;*/
+/*}*/
+
+/*::-webkit-scrollbar-track{*/
+    /*width: 2px;*/
+    /*color: black;*/
+/*}*/
+
+/*::-webkit-scrollbar-thumb {*/
+    /*width: 2px;*/
+    /*color: white;*/
+/*}*/
+
+/*::-webkit-scrollbar-track-piece{*/
+    /*width: 2px;*/
+    /*color: black;*/
+/*}*/
+
+/*::-webkit-scrollbar-corner{*/
+    /*color: black;*/
+/*}*/
+
+/*::-webkit-resizer{*/
+    /*color: black;*/
+/*}*/
+
+/*::-webkit-scrollbar-button{*/
+    /*color: black;*/
+/*}*/
+
+
+    /*<editor-fold desc="PAGE PARENT CONTAINER">*/
+#main-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="GOOGLE MAPS CONTAINER">*/
+#map {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="CITA LOGO CONTAINER">*/
+#logo-template-container {
+    background-color: transparent;
+    position: absolute;
+    top: 1.5vh;
+    right: 1.5vh;
+    height: 10vh;
+    width: 15vw;
+    z-index: 1000000;
+}
+#cita-logo-overlay{
+    height: 80%;
+    width: 90%;
+}
+/*</editor-fold>*/
+
+
+/*<editor-fold desc="DANCING RIVERS LOGO CONTAINER">*/
+#dancing-rivers-logo-template-container {
+    background-color: transparent;
+    position: absolute;
+    top: 13vh;
+    right: 1.5vh;
+    height: 10vh;
+    width: 15vw;
+    z-index: 1000000;
+}
+#dancing-rivers-logo-overlay{
+    height: 80%;
+    width: 90%;
+}
+/*</editor-fold>*/
+
+
+/*<editor-fold desc="CLEAR MAP BUTTON CONTAINER">*/
+#clear-map-container{
+
+    display: none;
+    /*display: flex;*/
+    align-content: center;
+    justify-content: center;
+    background-color: rgba(75,75,75,1.0);
+    position: absolute;
+    right: 3vh;
+    bottom: 3vh;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    z-index: 1000000;
+
+}
+
+#clear-map-button{
+
+    height: 90%;
+    width: 90%;
+    cursor: pointer;
+    align-self: center;
+
+}
+/*</editor-fold>*/
+
+
+/*<editor-fold desc="SPANISH BUTTON CONTAINER">*/
+#spanish-button-container{
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: rgba(75,75,75,1.0);
+    position: absolute;
+    right: 3vh;
+    bottom: 3vh;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    z-index: 1000000;
+    /*display: flex;*/
+    /*align-content: center;*/
+    /*justify-content: center;*/
+    /*background-color: rgba(75,75,75,1.0);*/
+    /*position: absolute;*/
+    /*right: 3vh;*/
+    /*bottom: calc(3vh + 40px + 3vh);*/
+    /*height: 40px;*/
+    /*width: 40px;*/
+    /*border-radius: 20px;*/
+    /*z-index: 1000000;*/
+
+}
+
+#spanish-button{
+
+    height: 60%;
+    width: 60%;
+    cursor: pointer;
+    align-self: center;
+
+}
+/*</editor-fold>*/
+
+
+/*<editor-fold desc="ENGLISH BUTTON CONTAINER">*/
+#english-button-container{
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: rgba(75,75,75,1.0);
+    position: absolute;
+    right: 3vh;
+    bottom: calc(3vh + 40px + 3vh);
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    z-index: 1000000;
+    /*display: flex;*/
+    /*align-content: center;*/
+    /*justify-content: center;*/
+    /*background-color: rgba(75,75,75,1.0);*/
+    /*position: absolute;*/
+    /*right: 3vh;*/
+    /*bottom: calc(3vh + 40px + 3vh + 40px + 3vh);*/
+    /*height: 40px;*/
+    /*width: 40px;*/
+    /*border-radius: 20px;*/
+    /*z-index: 1000000;*/
+
+}
+
+#english-button{
+
+    height: 60%;
+    width: 60%;
+    cursor: pointer;
+    align-self: center;
+
+}
+/*</editor-fold>*/
+
+
+/*<editor-fold desc="ORIGINAL DATA CONTAINER">*/
+#data-original-container {
+    display: none;
+    background-color: transparent;
+    /*display: flex;*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: var(--side-bar-container-width);
+    /*z-index: 1000002;*/
+    z-index: 1000001;
+    /*border-radius: 10px;*/
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="BACKGROUND DATA CONTAINER">*/
+#data-background-container {
+    /*display: none;*/
+    height: 100vh;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /*height: 50vh;*/
+    width: var(--side-bar-container-width);
+    /*z-index: 1000001;*/
+    z-index: 1000002;
+    /*border-radius: 10px;*/
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="MORPHOMETRICS CONTAINER">*/
+#metricsContainer{
+    position: absolute;
+    right: 19.25vw;
+    top: 5vh;
+    z-index: 1000001;
+    border-radius: 10px;
+    padding: 20px;
+    min-width: 14vw;
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="BOTTOM LEFT CONTAINER">*/
+#map-bottom-left-container{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 75vh;
+    height: 25vh;
+    width: 25vw;
+    z-index: 1000001;
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="LEGEND CONTAINER">*/
+/*<editor-fold desc="PARENT CONTAINER">*/
+#morphometrics-legend-container{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 20vw;
+    top: 73.75vh;
+    height: 25vh;
+    width: 12.5vw;
+    z-index: 1000001;
+    visibility: hidden;
+}
+#extra-legend-container{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 7.5vw;
+    top: 73.75vh;
+    height: 25vh;
+    width: 12.5vw;
+    z-index: 1000001;
+    visibility: hidden;
+}
+#background-legend-container{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 7.5vw;
+    top: 50vh;
+    height: 25vh;
+    width: 12.5vw;
+    z-index: 1000001;
+    visibility: hidden;
+}
+/*</editor-fold>*/
+/*<editor-fold desc="OPTIONS CONTAINER">*/
+#legend-content{
+    background-color: #4a4a4a;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 80%;
+    height: 80%;
+}
+#extra-legend-content{
+    background-color: #4a4a4a;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 80%;
+    height: 80%;
+}
+#background-legend-content{
+    background-color: #4a4a4a;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 80%;
+    height: 80%;
+}
+/*</editor-fold>*/
+/*</editor-fold>*/
+
+/*<editor-fold desc="HELP TOOLTIP">*/
+#help-tooltip{
+    background-color: rgba(255,255,255,0.8);
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 42.5vw;
+    top: 5vh;
+    height: 5vh;
+    width: 15vw;
+    z-index: 1000001;
+    border-radius: 10px;
+    display: none;
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="PROGRESS BAR (TIMELINE)">*/
+#progress-bar-container{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+    left: 22.5vw;
+    top: 75vh;
+    height: 25vh;
+    width: 45vw;
+    z-index: 1000001;
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="DRONE FLIGHTS">*/
+/*<editor-fold desc="DRONE VIDEO OVERLAY">*/
+#droneVideoOverlay{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 3000001;
+    background-color: rgba(255,255,255,0.85);
+}
+/*</editor-fold>*/
+/*<editor-fold desc="DRONE FLIGHTS CARD LIST CONTAINER">*/
+#drone-flights-card-container{
+    background-color: rgba(0,0,0,0.85);
+    position: absolute;
+    width: 100vw;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 3000001;
+    overflow: scroll;
+    visibility: hidden;
+}
+/*</editor-fold>*/
+/*<editor-fold desc="DRONE FLIGHTS MARKER CARD CONTAINER">*/
+#drone-flights-marker-click-container{
+    background-color: transparent;
+    position: absolute;
+    width: 30vw;
+    height: 40vh;
+    top: 27vh;
+    left: 30vw;
+    z-index: 2000001;
+    border-radius: 10px;
+}
+/*</editor-fold>*/
+/*</editor-fold>*/
+
+/*<editor-fold desc="LSPIV CARD CONTAINER">*/
+#lspiv-marker-click-container{
+    background-color: transparent;
+    position: absolute;
+    width: 30vw;
+    height: 40vh;
+    top: 27vh;
+    left: 30vw;
+    z-index: 2000001;
+    border-radius: 10px;
+    visibility: hidden;
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="WATER LEVEL CARD CONTAINER">*/
+#water-level-card-container{
+    background-color: rgba(255,255,255,0.8);
+    position: absolute;
+    display: flex;
+    width: 40vw;
+    top: 25vh;
+    left: 30vw;
+    height: 50vh;
+    z-index: 2000001;
+    overflow: scroll;
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="DUNES CARD CONTAINER">*/
+#dunes-card-container{
+    background-color: rgba(255,255,255,0.8);
+    position: absolute;
+    display: flex;
+    width: 37.5vw;
+    top: 25vh;
+    left: 45vw;
+    height: 50vh;
+    z-index: 2000001;
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="BEDLOAD CARD CONTAINER">*/
+#bedload-card-container{
+    background-color: rgba(255,255,255,0.8);
+    position: absolute;
+    display: flex;
+    width: 37.5vw;
+    top: 25vh;
+    left: 45vw;
+    height: 50vh;
+    z-index: 2000001;
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="SEDIMENTS CARD CONTAINER">*/
+#sediments-card-container{
+    background-color: rgba(255,255,255,0.8);
+    position: absolute;
+    display: flex;
+    width: 37.5vw;
+    top: 25vh;
+    left: 45vw;
+    height: 50vh;
+    z-index: 2000001;
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="FLOW VELOCITY CARDS CONTAINERS">*/
+#UHD-top-card-container{
+    background-color: rgba(255,255,255,0.8);
+    position: absolute;
+    display: flex;
+    width: 37.5vw;
+    top: 5vh;
+    left: 45vw;
+    height: 42.5vh;
+    z-index: 2000001;
+    overflow: scroll;
+}
+
+#UHD-bottom-card-container{
+    background-color: rgba(255,255,255,0.8);
+    position: absolute;
+    display: flex;
+    width: 37.5vw;
+    top: 52.5vh;
+    left: 45vw;
+    height: 42.5vh;
+    z-index: 2000001;
+    overflow: scroll;
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="IMAGE ZOOM CONTAINER">*/
+#imageZoomOverlay{
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000001;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="DRONE VIDEO ANIMATION CARD CONTAINER">*/
+#drone-video-animation-click-container{
+    background-color: transparent;
+    position: absolute;
+    width: 35vw;
+    height: 60vh;
+    top: 20vh;
+    left: 45vw;
+    z-index: 2000001;
+    border-radius: 10px;
+}
+/*</editor-fold>*/
