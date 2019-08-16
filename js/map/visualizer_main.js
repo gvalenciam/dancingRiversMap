@@ -339,7 +339,6 @@ function initMap() {
             "river_wavelength_layer": [huallaga_wavelength_data_layer_1989, huallaga_wavelength_data_layer_1993, huallaga_wavelength_data_layer_1997, huallaga_wavelength_data_layer_2001, huallaga_wavelength_data_layer_2005, huallaga_wavelength_data_layer_2009, huallaga_wavelength_data_layer_2013, huallaga_wavelength_data_layer_2017],
             "river_islands_layer": [huallaga_islands_data_layer_1987, huallaga_islands_data_layer_1993, huallaga_islands_data_layer_1999, huallaga_islands_data_layer_2005, huallaga_islands_data_layer_2011, huallaga_islands_data_layer_2017],
             "river_path": ["data/rivers/Huallaga/huallaga1989.json", "data/rivers/Huallaga/huallaga1993.json", "data/rivers/Huallaga/huallaga1997.json", "data/rivers/Huallaga/huallaga2001.json", "data/rivers/Huallaga/huallaga2005.json", "data/rivers/Huallaga/huallaga2009.json", "data/rivers/Huallaga/huallaga2013.json", "data/rivers/Huallaga/huallaga2017.json"],
-            // "river_path": ["data/test/h_main1987.geojson", "data/test/h_main1993.geojson", "data/test/h_main1999.geojson", "data/test/h_main2005.geojson", "data/test/h_main2011.geojson", "data/test/h_main2017.geojson"],
             "river_island_path": []
         },
         {
