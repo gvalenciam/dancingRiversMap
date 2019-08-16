@@ -6,11 +6,13 @@
  */
 
 let cita_main_color = "#00BFDF";
+let islands_fill_color = "#69BC89";
 let noChangeColor_erosionDeposition = "#143291";
 let erosionColor_erosionDeposition = "#B71632";
 let depositionColor_erosionDeposition = "#64AF62";
-let dunes_sections_color = "#99FFFF";
-let dunes_lines_color = "#604020";
+let dunes_section_border_color = "#252323";
+let dunes_sections_color = "#7F95D1";
+let dunes_lines_color = "#252323";
 let bedload_sections_color = "#99FFFF";
 let migration_green = "#1E961E";
 let migration_yellow = "#ECEC0E";

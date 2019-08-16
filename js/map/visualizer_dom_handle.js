@@ -411,22 +411,34 @@ function setYearContainersListener8(){
                     if(data_submenu_options[1].options[0].submenu_option_enabled_state){
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                         disableDataLayerVisibility(rivers_migration_JSON[activeRiverIndex].data_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                         toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer, 0);
                     }else if(data_submenu_options[1].options[1].submenu_option_enabled_state){
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                         disableDataLayerVisibility(rivers_migration_JSON[activeRiverIndex].data_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                         toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer, 0);
                     }else if(data_submenu_options[1].options[2].submenu_option_enabled_state){
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                         disableDataLayerVisibility(rivers_migration_JSON[activeRiverIndex].data_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                         toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer, 0);
                     }else if(data_submenu_options[1].options[3].submenu_option_enabled_state){
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                         toggleDataLayerVisibility(rivers_migration_JSON[activeRiverIndex].data_layer, 0);
                     }else if(data_submenu_options[1].options[4].submenu_option_enabled_state){
 
@@ -439,23 +451,35 @@ function setYearContainersListener8(){
 
                     if(data_submenu_options[1].options[0].submenu_option_enabled_state){
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                         disableDataLayerVisibility(rivers_migration_JSON[activeRiverIndex].data_layer);
                         toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer, 1);
+                        toggleDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer, 1);
                     }else if(data_submenu_options[1].options[1].submenu_option_enabled_state){
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                         disableDataLayerVisibility(rivers_migration_JSON[activeRiverIndex].data_layer);
                         toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer, 1);
+                        toggleDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer, 1);
                     }else if(data_submenu_options[1].options[2].submenu_option_enabled_state){
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                         disableDataLayerVisibility(rivers_migration_JSON[activeRiverIndex].data_layer);
                         toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer, 1);
+                        toggleDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer, 1);
                     }else if(data_submenu_options[1].options[3].submenu_option_enabled_state){
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                         toggleDataLayerVisibility(rivers_migration_JSON[activeRiverIndex].data_layer, 1);
                     }else if(data_submenu_options[1].options[4].submenu_option_enabled_state){
 
@@ -468,23 +492,35 @@ function setYearContainersListener8(){
 
                     if(data_submenu_options[1].options[0].submenu_option_enabled_state){
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                         disableDataLayerVisibility(rivers_migration_JSON[activeRiverIndex].data_layer);
                         toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer, 2);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                     }else if(data_submenu_options[1].options[1].submenu_option_enabled_state){
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                         disableDataLayerVisibility(rivers_migration_JSON[activeRiverIndex].data_layer);
                         toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer, 2);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                     }else if(data_submenu_options[1].options[2].submenu_option_enabled_state){
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                         disableDataLayerVisibility(rivers_migration_JSON[activeRiverIndex].data_layer);
                         toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer, 2);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                     }else if(data_submenu_options[1].options[3].submenu_option_enabled_state){
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                         toggleDataLayerVisibility(rivers_migration_JSON[activeRiverIndex].data_layer, 2);
                     }else if(data_submenu_options[1].options[4].submenu_option_enabled_state){
 
@@ -498,23 +534,35 @@ function setYearContainersListener8(){
 
                     if(data_submenu_options[1].options[0].submenu_option_enabled_state){
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                         disableDataLayerVisibility(rivers_migration_JSON[activeRiverIndex].data_layer);
                         toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer, 3);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                     }else if(data_submenu_options[1].options[1].submenu_option_enabled_state){
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                         disableDataLayerVisibility(rivers_migration_JSON[activeRiverIndex].data_layer);
                         toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer, 3);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                     }else if(data_submenu_options[1].options[2].submenu_option_enabled_state){
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                         disableDataLayerVisibility(rivers_migration_JSON[activeRiverIndex].data_layer);
                         toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer, 3);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                     }else if(data_submenu_options[1].options[3].submenu_option_enabled_state){
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                         toggleDataLayerVisibility(rivers_migration_JSON[activeRiverIndex].data_layer, 3);
                     }else if(data_submenu_options[1].options[4].submenu_option_enabled_state){
 
@@ -527,23 +575,35 @@ function setYearContainersListener8(){
 
                     if(data_submenu_options[1].options[0].submenu_option_enabled_state){
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                         disableDataLayerVisibility(rivers_migration_JSON[activeRiverIndex].data_layer);
                         toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer, 4);
+                        toggleDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer, 3);
                     }else if(data_submenu_options[1].options[1].submenu_option_enabled_state){
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                         disableDataLayerVisibility(rivers_migration_JSON[activeRiverIndex].data_layer);
                         toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer, 4);
+                        toggleDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer, 3);
                     }else if(data_submenu_options[1].options[2].submenu_option_enabled_state){
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                         disableDataLayerVisibility(rivers_migration_JSON[activeRiverIndex].data_layer);
                         toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer, 4);
+                        toggleDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer, 3);
                     }else if(data_submenu_options[1].options[3].submenu_option_enabled_state){
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                         toggleDataLayerVisibility(rivers_migration_JSON[activeRiverIndex].data_layer, 4);
                     }else if(data_submenu_options[1].options[4].submenu_option_enabled_state){
 
@@ -556,23 +616,35 @@ function setYearContainersListener8(){
 
                     if(data_submenu_options[1].options[0].submenu_option_enabled_state){
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                         disableDataLayerVisibility(rivers_migration_JSON[activeRiverIndex].data_layer);
                         toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer, 5);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                     }else if(data_submenu_options[1].options[1].submenu_option_enabled_state){
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                         disableDataLayerVisibility(rivers_migration_JSON[activeRiverIndex].data_layer);
                         toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer, 5);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                     }else if(data_submenu_options[1].options[2].submenu_option_enabled_state){
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                         disableDataLayerVisibility(rivers_migration_JSON[activeRiverIndex].data_layer);
                         toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer, 5);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                     }else if(data_submenu_options[1].options[3].submenu_option_enabled_state){
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                         toggleDataLayerVisibility(rivers_migration_JSON[activeRiverIndex].data_layer, 5);
                     }else if(data_submenu_options[1].options[4].submenu_option_enabled_state){
 
@@ -585,23 +657,35 @@ function setYearContainersListener8(){
 
                     if(data_submenu_options[1].options[0].submenu_option_enabled_state){
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                         disableDataLayerVisibility(rivers_migration_JSON[activeRiverIndex].data_layer);
                         toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer, 6);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                     }else if(data_submenu_options[1].options[1].submenu_option_enabled_state){
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                         disableDataLayerVisibility(rivers_migration_JSON[activeRiverIndex].data_layer);
                         toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer, 6);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                     }else if(data_submenu_options[1].options[2].submenu_option_enabled_state){
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                         disableDataLayerVisibility(rivers_migration_JSON[activeRiverIndex].data_layer);
                         toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer, 6);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                     }else if(data_submenu_options[1].options[3].submenu_option_enabled_state){
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                         toggleDataLayerVisibility(rivers_migration_JSON[activeRiverIndex].data_layer, 6);
                     }else if(data_submenu_options[1].options[4].submenu_option_enabled_state){
 
@@ -614,23 +698,35 @@ function setYearContainersListener8(){
 
                     if(data_submenu_options[1].options[0].submenu_option_enabled_state){
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                         disableDataLayerVisibility(rivers_migration_JSON[activeRiverIndex].data_layer);
                         toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer, 7);
+                        toggleDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer, 5);
                     }else if(data_submenu_options[1].options[1].submenu_option_enabled_state){
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                         disableDataLayerVisibility(rivers_migration_JSON[activeRiverIndex].data_layer);
                         toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer, 7);
+                        toggleDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer, 5);
                     }else if(data_submenu_options[1].options[2].submenu_option_enabled_state){
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                         disableDataLayerVisibility(rivers_migration_JSON[activeRiverIndex].data_layer);
                         toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer, 7);
+                        toggleDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer, 5);
                     }else if(data_submenu_options[1].options[3].submenu_option_enabled_state){
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                         disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                        disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                         toggleDataLayerVisibility(rivers_migration_JSON[activeRiverIndex].data_layer, 7);
                     }else if(data_submenu_options[1].options[4].submenu_option_enabled_state){
 
@@ -712,23 +808,35 @@ function playYearSlider8() {
 
             if(data_submenu_options[1].options[0].submenu_option_enabled_state){
                 disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                 disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                 disableDataLayerVisibility(ucayali_migration_data_layers);
                 toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer, 0);
+                disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
             }else if(data_submenu_options[1].options[1].submenu_option_enabled_state){
                 disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                 disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                 disableDataLayerVisibility(ucayali_migration_data_layers);
                 toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer, 0);
+                disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
             }else if(data_submenu_options[1].options[2].submenu_option_enabled_state){
                 disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                 disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                 disableDataLayerVisibility(ucayali_migration_data_layers);
                 toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer, 0);
+                disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
             }else if(data_submenu_options[1].options[3].submenu_option_enabled_state){
                 disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                 disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                 disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                 toggleDataLayerVisibility(ucayali_migration_data_layers, 0);
             }else if(data_submenu_options[1].options[4].submenu_option_enabled_state){
 
@@ -743,23 +851,35 @@ function playYearSlider8() {
 
                 if(data_submenu_options[1].options[0].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                     disableDataLayerVisibility(ucayali_migration_data_layers);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer, 1);
+                    toggleDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer, 1);
                 }else if(data_submenu_options[1].options[1].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                     disableDataLayerVisibility(ucayali_migration_data_layers);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer, 1);
+                    toggleDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer, 1);
                 }else if(data_submenu_options[1].options[2].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                     disableDataLayerVisibility(ucayali_migration_data_layers);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer, 1);
+                    toggleDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer, 1);
                 }else if(data_submenu_options[1].options[3].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                     toggleDataLayerVisibility(ucayali_migration_data_layers, 1);
                 }else if(data_submenu_options[1].options[4].submenu_option_enabled_state){
 
@@ -776,23 +896,35 @@ function playYearSlider8() {
 
                 if(data_submenu_options[1].options[0].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                     disableDataLayerVisibility(ucayali_migration_data_layers);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer, 2);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                 }else if(data_submenu_options[1].options[1].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                     disableDataLayerVisibility(ucayali_migration_data_layers);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer, 2);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                 }else if(data_submenu_options[1].options[2].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                     disableDataLayerVisibility(ucayali_migration_data_layers);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer, 2);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                 }else if(data_submenu_options[1].options[3].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                     toggleDataLayerVisibility(ucayali_migration_data_layers, 2);
                 }else if(data_submenu_options[1].options[4].submenu_option_enabled_state){
 
@@ -809,23 +941,35 @@ function playYearSlider8() {
 
                 if(data_submenu_options[1].options[0].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                     disableDataLayerVisibility(ucayali_migration_data_layers);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer, 3);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                 }else if(data_submenu_options[1].options[1].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                     disableDataLayerVisibility(ucayali_migration_data_layers);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer, 3);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                 }else if(data_submenu_options[1].options[2].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                     disableDataLayerVisibility(ucayali_migration_data_layers);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer, 3);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                 }else if(data_submenu_options[1].options[3].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                     toggleDataLayerVisibility(ucayali_migration_data_layers, 3);
                 }else if(data_submenu_options[1].options[4].submenu_option_enabled_state){
 
@@ -842,23 +986,35 @@ function playYearSlider8() {
 
                 if(data_submenu_options[1].options[0].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                     disableDataLayerVisibility(ucayali_migration_data_layers);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer, 4);
+                    toggleDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer, 3);
                 }else if(data_submenu_options[1].options[1].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                     disableDataLayerVisibility(ucayali_migration_data_layers);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer, 4);
+                    toggleDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer, 3);
                 }else if(data_submenu_options[1].options[2].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                     disableDataLayerVisibility(ucayali_migration_data_layers);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer, 4);
+                    toggleDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer, 3);
                 }else if(data_submenu_options[1].options[3].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                     toggleDataLayerVisibility(ucayali_migration_data_layers, 4);
                 }else if(data_submenu_options[1].options[4].submenu_option_enabled_state){
 
@@ -875,23 +1031,35 @@ function playYearSlider8() {
 
                 if(data_submenu_options[1].options[0].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                     disableDataLayerVisibility(ucayali_migration_data_layers);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer, 5);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                 }else if(data_submenu_options[1].options[1].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                     disableDataLayerVisibility(ucayali_migration_data_layers);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer, 5);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                 }else if(data_submenu_options[1].options[2].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                     disableDataLayerVisibility(ucayali_migration_data_layers);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer, 5);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                 }else if(data_submenu_options[1].options[3].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                     toggleDataLayerVisibility(ucayali_migration_data_layers, 5);
                 }else if(data_submenu_options[1].options[4].submenu_option_enabled_state){
 
@@ -908,23 +1076,35 @@ function playYearSlider8() {
 
                 if(data_submenu_options[1].options[0].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                     disableDataLayerVisibility(ucayali_migration_data_layers);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer, 6);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                 }else if(data_submenu_options[1].options[1].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                     disableDataLayerVisibility(ucayali_migration_data_layers);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer, 6);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                 }else if(data_submenu_options[1].options[2].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                     disableDataLayerVisibility(ucayali_migration_data_layers);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer, 6);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                 }else if(data_submenu_options[1].options[3].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                     toggleDataLayerVisibility(ucayali_migration_data_layers, 6);
                 }else if(data_submenu_options[1].options[4].submenu_option_enabled_state){
 
@@ -941,23 +1121,35 @@ function playYearSlider8() {
 
                 if(data_submenu_options[1].options[0].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                     disableDataLayerVisibility(ucayali_migration_data_layers);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer, 7);
+                    toggleDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer, 5);
                 }else if(data_submenu_options[1].options[1].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                     disableDataLayerVisibility(ucayali_migration_data_layers);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer, 7);
+                    toggleDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer, 5);
                 }else if(data_submenu_options[1].options[2].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                     disableDataLayerVisibility(ucayali_migration_data_layers);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer, 7);
+                    toggleDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer, 5);
                 }else if(data_submenu_options[1].options[3].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
                     toggleDataLayerVisibility(ucayali_migration_data_layers, 7);
                 }else if(data_submenu_options[1].options[4].submenu_option_enabled_state){
 
@@ -1008,19 +1200,31 @@ function setYearContainersListener6(){
                 if(data_submenu_options[1].options[0].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer, 0);
+                    toggleDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer, 0);
                 }else if(data_submenu_options[1].options[1].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer, 0);
                 }else if(data_submenu_options[1].options[2].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer, 0);
                 }else if(data_submenu_options[1].options[3].submenu_option_enabled_state){
 
                 }else if(data_submenu_options[1].options[4].submenu_option_enabled_state){
 
+                }else if(data_submenu_options[1].options[5].submenu_option_enabled_state){
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer, 0);
                 }
 
 
@@ -1029,25 +1233,23 @@ function setYearContainersListener6(){
                 document.getElementById("myBar").style.width = "33.34%";
                 width = 34;
 
-                // if(data_submenu_options[1].options[0].submenu_option_enabled_state || data_submenu_options[1].options[1].submenu_option_enabled_state || data_submenu_options[1].options[2].submenu_option_enabled_state){
-                //     addRiverToMap(activeRiverJSON(activeRiverIndex), 1);
-                // }else if(data_submenu_options[1].options[4].submenu_option_enabled_state){
-                //     toggleDataLayerVisibility(rivers_erosion_deposition_JSON[activeRiverIndex].river_data_NC_layer, 0);
-                //     toggleDataLayerVisibility(rivers_erosion_deposition_JSON[activeRiverIndex].river_data_E_layer, 0);
-                //     toggleDataLayerVisibility(rivers_erosion_deposition_JSON[activeRiverIndex].river_data_D_layer, 0);
-                // }
-
                 if(data_submenu_options[1].options[0].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer, 1);
+                    toggleDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer, 1);
                 }else if(data_submenu_options[1].options[1].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer, 1);
                 }else if(data_submenu_options[1].options[2].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer, 1);
                 }else if(data_submenu_options[1].options[3].submenu_option_enabled_state){
 
@@ -1055,6 +1257,12 @@ function setYearContainersListener6(){
                     toggleDataLayerVisibility(rivers_erosion_deposition_JSON[activeRiverIndex].river_data_NC_layer, 0);
                     toggleDataLayerVisibility(rivers_erosion_deposition_JSON[activeRiverIndex].river_data_E_layer, 0);
                     toggleDataLayerVisibility(rivers_erosion_deposition_JSON[activeRiverIndex].river_data_D_layer, 0);
+                }else if(data_submenu_options[1].options[5].submenu_option_enabled_state){
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer, 1);
                 }
 
             }else if(yearContainer.id === "year-label-3"){
@@ -1062,30 +1270,34 @@ function setYearContainersListener6(){
                 document.getElementById("myBar").style.width = "50.01%";
                 width = 50;
 
-                // if(data_submenu_options[1].options[0].submenu_option_enabled_state || data_submenu_options[1].options[1].submenu_option_enabled_state || data_submenu_options[1].options[2].submenu_option_enabled_state){
-                //     addRiverToMap(activeRiverJSON(activeRiverIndex), 2);
-                // }else if(data_submenu_options[1].options[4].submenu_option_enabled_state){
-                //     toggleDataLayerVisibility(rivers_erosion_deposition_JSON[activeRiverIndex].river_data_NC_layer, 2);
-                //     toggleDataLayerVisibility(rivers_erosion_deposition_JSON[activeRiverIndex].river_data_E_layer, 2);
-                //     toggleDataLayerVisibility(rivers_erosion_deposition_JSON[activeRiverIndex].river_data_D_layer, 2);
-                // }
-
                 if(data_submenu_options[1].options[0].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer, 2);
+                    toggleDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer, 2);
                 }else if(data_submenu_options[1].options[1].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer, 2);
                 }else if(data_submenu_options[1].options[2].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer, 2);
                 }else if(data_submenu_options[1].options[4].submenu_option_enabled_state){
                     toggleDataLayerVisibility(rivers_erosion_deposition_JSON[activeRiverIndex].river_data_NC_layer, 1);
                     toggleDataLayerVisibility(rivers_erosion_deposition_JSON[activeRiverIndex].river_data_E_layer, 1);
                     toggleDataLayerVisibility(rivers_erosion_deposition_JSON[activeRiverIndex].river_data_D_layer, 1);
+                }else if(data_submenu_options[1].options[5].submenu_option_enabled_state){
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer, 2);
                 }
 
             }else if(yearContainer.id === "year-label-4"){
@@ -1096,88 +1308,100 @@ function setYearContainersListener6(){
                 if(data_submenu_options[1].options[0].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer, 3);
+                    toggleDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer, 3);
                 }else if(data_submenu_options[1].options[1].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer, 3);
                 }else if(data_submenu_options[1].options[2].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer, 3);
                 }else if(data_submenu_options[1].options[4].submenu_option_enabled_state){
                     toggleDataLayerVisibility(rivers_erosion_deposition_JSON[activeRiverIndex].river_data_NC_layer, 2);
                     toggleDataLayerVisibility(rivers_erosion_deposition_JSON[activeRiverIndex].river_data_E_layer, 2);
                     toggleDataLayerVisibility(rivers_erosion_deposition_JSON[activeRiverIndex].river_data_D_layer, 2);
+                }else if(data_submenu_options[1].options[5].submenu_option_enabled_state){
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer, 3);
                 }
-
-                // if(data_submenu_options[1].options[0].submenu_option_enabled_state || data_submenu_options[1].options[1].submenu_option_enabled_state || data_submenu_options[1].options[2].submenu_option_enabled_state){
-                //     addRiverToMap(activeRiverJSON(activeRiverIndex), 3);
-                // }else if(data_submenu_options[1].options[4].submenu_option_enabled_state){
-                //     toggleDataLayerVisibility(rivers_erosion_deposition_JSON[activeRiverIndex].river_data_NC_layer, 1);
-                //     toggleDataLayerVisibility(rivers_erosion_deposition_JSON[activeRiverIndex].river_data_E_layer, 1);
-                //     toggleDataLayerVisibility(rivers_erosion_deposition_JSON[activeRiverIndex].river_data_D_layer, 1);
-                // }
 
             }else if(yearContainer.id === "year-label-5"){
 
                 document.getElementById("myBar").style.width = "83.35%";
                 width = 84;
 
-                // if(data_submenu_options[1].options[0].submenu_option_enabled_state || data_submenu_options[1].options[1].submenu_option_enabled_state || data_submenu_options[1].options[2].submenu_option_enabled_state){
-                //     addRiverToMap(activeRiverJSON(activeRiverIndex), 4);
-                // }else if(data_submenu_options[1].options[4].submenu_option_enabled_state){
-                //     toggleDataLayerVisibility(rivers_erosion_deposition_JSON[activeRiverIndex].river_data_NC_layer, 2);
-                //     toggleDataLayerVisibility(rivers_erosion_deposition_JSON[activeRiverIndex].river_data_E_layer, 2);
-                //     toggleDataLayerVisibility(rivers_erosion_deposition_JSON[activeRiverIndex].river_data_D_layer, 2);
-                // }
-
                 if(data_submenu_options[1].options[0].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer, 4);
+                    toggleDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer, 4);
                 }else if(data_submenu_options[1].options[1].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer, 4);
                 }else if(data_submenu_options[1].options[2].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer, 4);
                 }else if(data_submenu_options[1].options[4].submenu_option_enabled_state){
                     toggleDataLayerVisibility(rivers_erosion_deposition_JSON[activeRiverIndex].river_data_NC_layer, 3);
                     toggleDataLayerVisibility(rivers_erosion_deposition_JSON[activeRiverIndex].river_data_E_layer, 3);
                     toggleDataLayerVisibility(rivers_erosion_deposition_JSON[activeRiverIndex].river_data_D_layer, 3);
+                }else if(data_submenu_options[1].options[5].submenu_option_enabled_state){
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer, 4);
                 }
 
             }else if(yearContainer.id === "year-label-6"){
                 document.getElementById("myBar").style.width = "100%";
                 width = 100;
 
-                // if(data_submenu_options[1].options[0].submenu_option_enabled_state || data_submenu_options[1].options[1].submenu_option_enabled_state || data_submenu_options[1].options[2].submenu_option_enabled_state){
-                //     addRiverToMap(activeRiverJSON(activeRiverIndex), 5);
-                // }else if(data_submenu_options[1].options[4].submenu_option_enabled_state){
-                //     toggleDataLayerVisibility(rivers_erosion_deposition_JSON[activeRiverIndex].river_data_NC_layer, 3);
-                //     toggleDataLayerVisibility(rivers_erosion_deposition_JSON[activeRiverIndex].river_data_E_layer, 3);
-                //     toggleDataLayerVisibility(rivers_erosion_deposition_JSON[activeRiverIndex].river_data_D_layer, 3);
-                // }
-
                 if(data_submenu_options[1].options[0].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer, 5);
+                    toggleDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer, 5);
                 }else if(data_submenu_options[1].options[1].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer, 5);
                 }else if(data_submenu_options[1].options[2].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer, 5);
                 }else if(data_submenu_options[1].options[4].submenu_option_enabled_state){
                     toggleDataLayerVisibility(rivers_erosion_deposition_JSON[activeRiverIndex].river_data_NC_layer, 4);
                     toggleDataLayerVisibility(rivers_erosion_deposition_JSON[activeRiverIndex].river_data_E_layer, 4);
                     toggleDataLayerVisibility(rivers_erosion_deposition_JSON[activeRiverIndex].river_data_D_layer, 4);
+                }else if(data_submenu_options[1].options[5].submenu_option_enabled_state){
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer, 5);
                 }
 
             }
@@ -1252,17 +1476,29 @@ function playYearSlider6() {
             if(data_submenu_options[1].options[0].submenu_option_enabled_state){
                 disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                 disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer);
                 toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer, 0);
+                toggleDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer, 0);
             }else if(data_submenu_options[1].options[1].submenu_option_enabled_state){
                 disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                 disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer);
                 toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer, 0);
             }else if(data_submenu_options[1].options[2].submenu_option_enabled_state){
                 disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                 disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer);
                 toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer, 0);
             }else if(data_submenu_options[1].options[4].submenu_option_enabled_state){
                 clearRiverErosionDepositionLayers();
+            }else if(data_submenu_options[1].options[5].submenu_option_enabled_state){
+                disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer, 0);
             }
 
         }else if(width > 18.0 && width <= 34.0){
@@ -1275,19 +1511,30 @@ function playYearSlider6() {
                 if(data_submenu_options[1].options[0].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer, 1);
                 }else if(data_submenu_options[1].options[1].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer, 1);
                 }else if(data_submenu_options[1].options[2].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer, 1);
                 }else if(data_submenu_options[1].options[4].submenu_option_enabled_state){
                     toggleDataLayerVisibility(rivers_erosion_deposition_JSON[activeRiverIndex].river_data_NC_layer, 0);
                     toggleDataLayerVisibility(rivers_erosion_deposition_JSON[activeRiverIndex].river_data_E_layer, 0);
                     toggleDataLayerVisibility(rivers_erosion_deposition_JSON[activeRiverIndex].river_data_D_layer, 0);
+                }else if(data_submenu_options[1].options[5].submenu_option_enabled_state){
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer, 1);
                 }
 
             }
@@ -1302,19 +1549,31 @@ function playYearSlider6() {
                 if(data_submenu_options[1].options[0].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer, 2);
+                    toggleDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer, 2);
                 }else if(data_submenu_options[1].options[1].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer, 2);
                 }else if(data_submenu_options[1].options[2].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer, 2);
                 }else if(data_submenu_options[1].options[4].submenu_option_enabled_state){
                     toggleDataLayerVisibility(rivers_erosion_deposition_JSON[activeRiverIndex].river_data_NC_layer, 1);
                     toggleDataLayerVisibility(rivers_erosion_deposition_JSON[activeRiverIndex].river_data_E_layer, 1);
                     toggleDataLayerVisibility(rivers_erosion_deposition_JSON[activeRiverIndex].river_data_D_layer, 1);
+                }else if(data_submenu_options[1].options[5].submenu_option_enabled_state){
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer, 2);
                 }
 
             }
@@ -1329,19 +1588,31 @@ function playYearSlider6() {
                 if(data_submenu_options[1].options[0].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer, 3);
+                    toggleDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer, 3);
                 }else if(data_submenu_options[1].options[1].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer, 3);
                 }else if(data_submenu_options[1].options[2].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer, 3);
                 }else if(data_submenu_options[1].options[4].submenu_option_enabled_state){
                     toggleDataLayerVisibility(rivers_erosion_deposition_JSON[activeRiverIndex].river_data_NC_layer, 2);
                     toggleDataLayerVisibility(rivers_erosion_deposition_JSON[activeRiverIndex].river_data_E_layer, 2);
                     toggleDataLayerVisibility(rivers_erosion_deposition_JSON[activeRiverIndex].river_data_D_layer, 2);
+                }else if(data_submenu_options[1].options[5].submenu_option_enabled_state){
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer, 3);
                 }
 
             }
@@ -1356,19 +1627,31 @@ function playYearSlider6() {
                 if(data_submenu_options[1].options[0].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer, 4);
+                    toggleDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer, 4);
                 }else if(data_submenu_options[1].options[1].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer, 4);
                 }else if(data_submenu_options[1].options[2].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer, 4);
                 }else if(data_submenu_options[1].options[4].submenu_option_enabled_state){
                     toggleDataLayerVisibility(rivers_erosion_deposition_JSON[activeRiverIndex].river_data_NC_layer, 3);
                     toggleDataLayerVisibility(rivers_erosion_deposition_JSON[activeRiverIndex].river_data_E_layer, 3);
                     toggleDataLayerVisibility(rivers_erosion_deposition_JSON[activeRiverIndex].river_data_D_layer, 3);
+                }else if(data_submenu_options[1].options[5].submenu_option_enabled_state){
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer, 4);
                 }
 
             }
@@ -1383,19 +1666,31 @@ function playYearSlider6() {
                 if(data_submenu_options[1].options[0].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer, 5);
+                    toggleDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer, 5);
                 }else if(data_submenu_options[1].options[1].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer, 5);
                 }else if(data_submenu_options[1].options[2].submenu_option_enabled_state){
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
                     disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer);
                     toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer, 5);
                 }else if(data_submenu_options[1].options[4].submenu_option_enabled_state){
                     toggleDataLayerVisibility(rivers_erosion_deposition_JSON[activeRiverIndex].river_data_NC_layer, 4);
                     toggleDataLayerVisibility(rivers_erosion_deposition_JSON[activeRiverIndex].river_data_E_layer, 4);
                     toggleDataLayerVisibility(rivers_erosion_deposition_JSON[activeRiverIndex].river_data_D_layer, 4);
+                }else if(data_submenu_options[1].options[5].submenu_option_enabled_state){
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(upper_rivers_morphometrics_JSON[activeRiverIndex].river_width_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_sinuosity_layer);
+                    disableDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_wavelength_layer);
+                    toggleDataLayerVisibility(rivers_morphometrics_JSON[activeRiverIndex].river_islands_layer, 5);
                 }
 
             }
@@ -1405,6 +1700,40 @@ function playYearSlider6() {
     }
 
     isYearPlaying = !isYearPlaying;
+
+}
+
+function addCampaignIndicators(campaignJSON) {
+
+    var campaign_indicator_template = document.getElementsByTagName("template")[21];
+
+    for (var i = 0; i < campaignJSON.length; i++){
+
+        var campaign_indicator_template_content = document.importNode(campaign_indicator_template.content,true);
+        campaign_indicator_template_content.getElementById("campaign-indicator-text").setAttribute("data-i18n", campaignJSON[i].indicatorTextLangId);
+        campaign_indicator_template_content.getElementById("campaign-indicator-text").innerHTML = $.i18n(campaignJSON[i].indicatorTextLangId);
+        campaign_indicator_template_content.getElementById("campaign-indicator-text").id = campaignJSON[i].text_id;
+        campaign_indicator_template_content.getElementById("campaign-indicator").id = campaignJSON[i].id;
+
+        document.getElementById("field-measurements-campaign-container").appendChild(campaign_indicator_template_content);
+
+        (function (i) {
+
+            document.getElementById(campaignJSON[i].id).addEventListener('click', function () {
+                if (campaignJSON[i].indicatorClickCallback !== null) campaignJSON[i].indicatorClickCallback();
+            });
+
+            document.getElementById(campaignJSON[i].id).addEventListener('mouseover', function () {
+                document.getElementById(campaignJSON[i].text_id).innerHTML = $.i18n(campaignJSON[i].indicatorHoverTextLangId);
+            });
+
+            document.getElementById(campaignJSON[i].id).addEventListener('mouseout', function () {
+                document.getElementById(campaignJSON[i].text_id).innerHTML = $.i18n(campaignJSON[i].indicatorTextLangId);
+            });
+
+        }(i));
+
+    }
 
 }
 
@@ -1519,12 +1848,9 @@ function setUHDDropdownsListeners(features) {
     $('#dropdownMenuButtonTop + [aria-labelledby="dropdownMenuButtonTop"] button').on('click', function (e) {
 
         e.preventDefault();
-        var ele = this;
+        let ele = this;
         UHDMarkerIndexTop = parseInt(ele.name);
-        //document.getElementById("dropdownMenuButtonTop").setAttribute("data-i18n", 'dropdown-UHD-section-item');
         document.getElementById("dropdownMenuButtonTop").innerHTML = $.i18n('dropdown-UHD-section-item', (parseInt(ele.name) + 1).toString());
-
-        console.log(ele.name);
 
         UHDHuallagaMarkers.forEach(function (marker) {
 
@@ -1534,19 +1860,20 @@ function setUHDDropdownsListeners(features) {
 
         });
 
-        console.log(features);
-
-        //UHDHuallagaMarkers[parseInt(ele.name)].setIcon("img/marker-icons/rojo.png");
         offsetCenter(UHDHuallagaMarkersPositions[parseInt(ele.name)], 10);
-        geocodeLatLng(UHDHuallagaMarkersPositions[parseInt(ele.name)], "top");
-        document.getElementById("UHD-top-card-image").src = "img/cross_sections_images/huallaga/" + features[parseInt(ele.name)].properties.id + ".png";
+        document.getElementById("UHD-marker-top-card-location").innerHTML = features[parseInt(ele.name)].properties.lugar + ", " + features[parseInt(ele.name)].properties.departamento + ", " + features[parseInt(ele.name)].properties.distrito;
+
+        if(activeRiverIndex === 0) document.getElementById("UHD-top-card-image").src = "img/cross_sections_images/Amazonas/" + features[parseInt(ele.name)].properties.id + ".png";
+        if(activeRiverIndex === 1) document.getElementById("UHD-top-card-image").src = "img/cross_sections_images/HUallaga/" + features[parseInt(ele.name)].properties.id + ".png";
+        if(activeRiverIndex === 2) document.getElementById("UHD-top-card-image").src = "img/cross_sections_images/Marañon/" + features[parseInt(ele.name)].properties.id + ".png";
+        if(activeRiverIndex === 3) document.getElementById("UHD-top-card-image").src = "img/cross_sections_images/Ucayali/" + features[parseInt(ele.name)].properties.id + ".png";
 
     });
 
     $('#dropdownMenuButtonBottom + [aria-labelledby="dropdownMenuButtonBottom"] button').on('click', function (e) {
 
         e.preventDefault();
-        var ele = this;
+        let ele = this;
         document.getElementById("dropdownMenuButtonBottom").innerHTML = ele.textContent;
         UHDMarkerIndexBottom = parseInt(ele.name);
 
@@ -1558,10 +1885,13 @@ function setUHDDropdownsListeners(features) {
 
         });
 
-        // UHDHuallagaMarkers[parseInt(ele.name) - 1].setIcon("img/marker-icons/azul.png");
-        offsetCenter(UHDHuallagaMarkersPositions[parseInt(ele.name) + 1], 10);
-        geocodeLatLng(UHDHuallagaMarkersPositions[parseInt(ele.name)], "bottom");
-        document.getElementById("UHD-bottom-card-image").src = "img/cross_sections_images/huallaga/" + features[parseInt(ele.name)].properties.id + ".png";
+        offsetCenter(UHDHuallagaMarkersPositions[parseInt(ele.name)], 10);
+        document.getElementById("UHD-marker-bottom-card-location").innerHTML = features[parseInt(ele.name)].properties.lugar + ", " + features[parseInt(ele.name)].properties.departamento + ", " + features[parseInt(ele.name)].properties.distrito;
+
+        if(activeRiverIndex === 0) document.getElementById("UHD-bottom-card-image").src = "img/cross_sections_images/Amazonas/" + features[parseInt(ele.name)].properties.id + ".png";
+        if(activeRiverIndex === 1) document.getElementById("UHD-bottom-card-image").src = "img/cross_sections_images/HUallaga/" + features[parseInt(ele.name)].properties.id + ".png";
+        if(activeRiverIndex === 2) document.getElementById("UHD-bottom-card-image").src = "img/cross_sections_images/Marañon/" + features[parseInt(ele.name)].properties.id + ".png";
+        if(activeRiverIndex === 3) document.getElementById("UHD-bottom-card-image").src = "img/cross_sections_images/Ucayali/" + features[parseInt(ele.name)].properties.id + ".png";
 
     });
 
@@ -1579,9 +1909,22 @@ function addButtonOptionsUHDDropdown(optionsLength, dropdownButtonContainerID) {
     for (var i = 0; i < optionsLength; i++){
         var dropdown_button_option_template_content = document.importNode(dropdown_button_option_template.content,true);
         dropdown_button_option_template_content.querySelectorAll(".dropdown-item")[0].name = i.toString();
-        // dropdown_button_option_template_content.querySelectorAll(".dropdown-item")[0].setAttribute("data-i18n", "dropdown-UHD-section-item" + "-" + (i+1).toString());
         dropdown_button_option_template_content.querySelectorAll(".dropdown-item")[0].setAttribute("data-i18n", "dropdown-UHD-section-item");
         dropdown_button_option_template_content.querySelectorAll(".dropdown-item")[0].innerHTML = $.i18n('dropdown-UHD-section-item', (i+1).toString());
+        document.getElementById(dropdownButtonContainerID).appendChild(dropdown_button_option_template_content);
+    }
+
+}
+
+function addButtonDunesProfilesDropdown(optionsLength, dropdownButtonContainerID) {
+
+    var dropdown_button_option_template = document.getElementsByTagName("template")[14];
+
+    for (var i = 0; i < optionsLength; i++){
+        var dropdown_button_option_template_content = document.importNode(dropdown_button_option_template.content,true);
+        dropdown_button_option_template_content.querySelectorAll(".dropdown-item")[0].name = (i + 1).toString();
+        dropdown_button_option_template_content.querySelectorAll(".dropdown-item")[0].setAttribute("data-i18n", "dropdown-dunes-profile-item");
+        dropdown_button_option_template_content.querySelectorAll(".dropdown-item")[0].innerHTML = $.i18n('dropdown-dunes-profile-item', (i+1).toString());
         document.getElementById(dropdownButtonContainerID).appendChild(dropdown_button_option_template_content);
     }
 
@@ -1595,23 +1938,22 @@ function setDunesDropdownListener() {
     $('#dropdownMenuDunesLines + [aria-labelledby="dropdownMenuDunesLines"] button').on('click', function (e) {
 
         e.preventDefault();
-        var ele = this;
+        let ele = this;
 
-        dunes_lines_huallaga_campaign_1_data_layer.forEach(function (feature) {
+        rivers_dunes_JSON[1].campaign_1_layers[1].forEach(function (feature) {
 
             if(feature.getProperty("Name").localeCompare(ele.name) === 0 && feature.getProperty("layer").localeCompare("UHG" + dunes_section_selected_index) === 0) {
-                document.getElementById("dunes-top-card-title").innerHTML = "Day 1: " + feature.getProperty("dayOne");
-                document.getElementById("dunes-bottom-card-title").innerHTML = "Day 2: " + feature.getProperty("dayTwo");
-                dunes_lines_huallaga_campaign_1_data_layer.overrideStyle(feature, {strokeColor: dunes_lines_color, strokeOpacity: 1.0, strokeWeight: 3.0});
+                document.getElementById("dunes-top-card-title").innerHTML = $.i18n("dunes-day-1") + feature.getProperty("dayOne");
+                document.getElementById("dunes-bottom-card-title").innerHTML = $.i18n("dunes-day-2") + feature.getProperty("dayTwo");
+                rivers_dunes_JSON[1].campaign_1_layers[1].overrideStyle(feature, {strokeColor: dunes_lines_color, strokeOpacity: 1.0, strokeWeight: 3.0});
             }else{
-                dunes_lines_huallaga_campaign_1_data_layer.overrideStyle(feature, {strokeColor: "#000000", strokeOpacity: 1.0, strokeWeight: 1.0});
+                rivers_dunes_JSON[1].campaign_1_layers[1].overrideStyle(feature, {strokeColor: "#000000", strokeOpacity: 1.0, strokeWeight: 1.0});
             }
 
         });
 
-        document.getElementById("dropdownMenuDunesLines").innerHTML = "Line " + this.name;
+        document.getElementById("dropdownMenuDunesLines").innerHTML = $.i18n('dropdown-dunes-profile-item', this.name);
         document.getElementById("dunes-top-card-image").src = "img/Dunes/Huallaga/UHG" + dunes_section_selected_index +"-" + this.name + ".png";
-        // document.getElementById("dunes-bottom-card-image").src = "img/Dunes/Huallaga/UHG" + dunes_section_selected_index +"-" + this.name + ".png";
 
     });
 

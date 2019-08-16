@@ -151,18 +151,20 @@ function addUHDMarkers(filePath, markerImagePath, markersArray, markersPositionA
 
                 google.maps.event.addListener(marker, 'click', function (e) {
 
-                    UHDMarkerIndexTop = UHDHuallagaMarkers.indexOf(marker) + 1;
+                    UHDMarkerIndexTop = UHDHuallagaMarkers.indexOf(marker);
 
                     markerClickFunction(json.features);
 
                     offsetCenter(marker.getPosition(), 12);
                     marker.setIcon("img/marker-icons/rojo.png");
-                    geocodeLatLng(marker.getPosition(), "top");
-                    // document.getElementById("UHD-top-card-image").src = "img/cross_sections_images/huallaga/Section " + (i + 1) +".png";
-                    document.getElementById("UHD-top-card-image").src = "img/cross_sections_images/huallaga/" + json.features[i].properties.id + ".png";
-                    // document.getElementById("dropdownMenuButtonTop").setAttribute("data-i18n", 'dropdown-UHD-section-item-' + UHDMarkerIndexTop.toString());
-                    //document.getElementById("dropdownMenuButtonTop").setAttribute("data-i18n", 'dropdown-UHD-section-item');
-                    document.getElementById("dropdownMenuButtonTop").innerHTML = $.i18n('dropdown-UHD-section-item', UHDMarkerIndexTop.toString());
+                    document.getElementById("UHD-marker-top-card-location").innerHTML = json.features[i].properties.lugar + ", " + json.features[i].properties.departamento + ", " + json.features[i].properties.distrito;
+
+                    if(activeRiverIndex === 0) document.getElementById("UHD-top-card-image").src = "img/cross_sections_images/Amazonas/" + json.features[i].properties.id + ".png";
+                    if(activeRiverIndex === 1) document.getElementById("UHD-top-card-image").src = "img/cross_sections_images/Huallaga/" + json.features[i].properties.id + ".png";
+                    if(activeRiverIndex === 2) document.getElementById("UHD-top-card-image").src = "img/cross_sections_images/Marañon/" + json.features[i].properties.id + ".png";
+                    if(activeRiverIndex === 3) document.getElementById("UHD-top-card-image").src = "img/cross_sections_images/Ucayali/" + json.features[i].properties.id + ".png";
+
+                    document.getElementById("dropdownMenuButtonTop").innerHTML = $.i18n('dropdown-UHD-section-item', (UHDMarkerIndexTop + 1).toString());
 
                 });
 
@@ -170,9 +172,7 @@ function addUHDMarkers(filePath, markerImagePath, markersArray, markersPositionA
 
         }
 
-        var coordsArray = coordinatesArrayCenter(markersPositionArray);
-        map.setZoom(10);
-        map.panTo(new google.maps.LatLng(coordsArray.centerX, coordsArray.centerY));
+        zoomAndPanToRiverCenter();
 
     })
 
@@ -206,7 +206,7 @@ function coordinatesArrayCenter(coordinatesArray) {
  */
 function offsetCenter(latlng, zoom) {
 
-    var offsetx = -$(window).width()/4;
+    var offsetx = -$(window).width()/6;
 
     var scale = Math.pow(2, zoom);
 

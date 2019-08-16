@@ -12,9 +12,9 @@
     <script type="text/javascript" src="js/jquery/jquery.min.js"></script>
     <!--TODO: JQuery JS Script-->
 
-    <!--TODO: D3 JS Script-->
-    <script src="http://d3js.org/d3.v2.js"></script>
-    <!--TODO: D3 JS Script-->
+    <!--&lt;!&ndash;TODO: D3 JS Script&ndash;&gt;-->
+    <!--<script src="http://d3js.org/d3.v2.js"></script>-->
+    <!--&lt;!&ndash;TODO: D3 JS Script&ndash;&gt;-->
 
     <!--TODO: Line Graph JS Script-->
     <script src="js/d3js_linegraph/line-graph.js"></script>
@@ -1083,6 +1083,52 @@
 </template>
 <!--TODO: Migration Progress bar 8 year template "20"-->
 
+<!--TODO: Field measurements campaign indicator "21"-->
+<template>
+
+    <style>
+
+        .field-measurement-campaign-indicator{
+            align-self: center;
+            background-color: white;
+            margin-left: 3%;
+            margin-right: 3%;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            height: 90%;
+            padding: 2.5%;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .field-measurement-campaign-indicator:hover{
+            color: white;
+            background-color: rgba(0,0,0,0.7);
+        }
+
+        .field-measurement-campaign-indicator-active{
+            color: white;
+            background-color: rgba(0,0,0,0.7);
+        }
+
+        .field-measurement-campaign-text{
+            margin: 0;
+            align-self: center;
+            font-size: 0.8vw;
+            text-align: center;
+        }
+
+    </style>
+
+    <div id="campaign-indicator" class="field-measurement-campaign-indicator">
+        <p id="campaign-indicator-text" class="field-measurement-campaign-text"></p>
+    </div>
+
+</template>
+<!--TODO: Field measurements campaign indicator "21"-->
+
+
 <body>
 
     <!--TODO: Page main container-->
@@ -1105,6 +1151,10 @@
         <!--TODO: Dancing Rivers Logo container -->
         <div id="dancing-rivers-logo-template-container"></div>
         <!--TODO: Dancing Rivers Logo container -->
+
+        <!--TODO: Field measurements campaign container -->
+        <div id="field-measurements-campaign-container"></div>
+        <!--TODO: Field measurements campaign container -->
 
         <!--TODO: Clear map button container -->
         <div id="clear-map-container">
@@ -1436,7 +1486,7 @@
 
                     <div style="height: 100%; width: 60%; display: flex; align-content: center; justify-content: center; margin-right: 10%">
 
-                        <p id="UHD-marker-top-card-location" style="overflow: hidden; font-size: 1vw; width: 100%; height: 100%;  margin-bottom: 0; padding: 5% 5% 5% 0"></p>
+                        <p id="UHD-marker-top-card-location" style="overflow: hidden; font-size: 0.8vw; width: 100%; height: 100%;  margin-bottom: 0; padding: 5% 5% 5% 0"></p>
 
                     </div>
 
@@ -1452,6 +1502,7 @@
                     </div>
 
                 </div>
+
                 <div id="UHD-top-card-image-container" style="background-color: transparent; width: 90%; height: 75%; align-self: center; display: flex; align-content: center; justify-content: center">
                     <img id="UHD-top-card-image" src="" height="100%" width="100%" style="z-index: 100003; cursor: zoom-in">
                 </div>
@@ -1470,7 +1521,7 @@
 
                     <div style="height: 100%; width: 60%; display: flex; align-content: center; justify-content: center; margin-right: 10%">
 
-                        <p id="UHD-marker-bottom-card-location" style="overflow: hidden; font-size: 1vw; width: 100%; height: 100%;  margin-bottom: 0; padding: 5% 5% 5% 0"></p>
+                        <p id="UHD-marker-bottom-card-location" style="overflow: hidden; font-size: 0.8vw; width: 100%; height: 100%;  margin-bottom: 0; padding: 5% 5% 5% 0"></p>
 
                     </div>
 
@@ -1487,7 +1538,7 @@
 
                 </div>
                 <div id="UHD-bottom-card-image-container" style="background-color: transparent; width: 90%; height: 75%; align-self: center; display: flex; align-content: center; justify-content: center">
-                    <img id="UHD-bottom-card-image" src="img/cross_sections_images/huallaga/hua_uhd1.png" height="100%"; width="100%" style="cursor: zoom-in;">
+                    <img id="UHD-bottom-card-image" height="100%" ; width="100%" style="cursor: zoom-in;">
                 </div>
 
 
@@ -1505,8 +1556,7 @@
                 <div style="background-color: transparent; width: 90%; height: 10%; align-self: center; display: flex; align-content: center; justify-content: center; margin-bottom: 20px">
 
                     <div style="height: 70%; width: 60%; display: flex; align-content: center; justify-content: center; margin-right: 10%; align-self: center">
-                        <!--<p id="dunes-card-title" style="height: 100%; margin: 0; text-align: left">Location</p>-->
-                        <p id="dunes-card-title" style="height: 100%; margin: 0; text-align: left">Location</p>
+                        <p id="dunes-card-title" style="height: 100%; margin: 0; text-align: left"></p>
                     </div>
                     <div style="background-color: transparent; width: 30%; height: 100%; display: flex; align-content: center; justify-content: center">
 
@@ -1514,11 +1564,7 @@
                             <button style="width: 100%; height: 80%; font-size: 1vw; border-radius: 10px" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuDunesLines" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Profile 1
                             </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuDunesLines" style="overflow-x: hidden; height: auto; max-height: 200px; z-index: 1000000">
-                                <button class="dropdown-item" type="button" name="1">Profile 1</button>
-                                <button class="dropdown-item" type="button" name="2">Profile 2</button>
-                                <button class="dropdown-item" type="button" name="3">Profile 3</button>
-                            </div>
+                            <div id="dropdown-dunes-profile-buttons-container" class="dropdown-menu" aria-labelledby="dropdownMenuDunesLines" style="overflow-x: hidden; height: auto; max-height: 200px; z-index: 1000000"></div>
                         </div>
 
                     </div>
@@ -1527,14 +1573,9 @@
 
                 <div id="dunes-top-image-container" style="background-color: transparent; width: 90%; height: 70%; align-self: center; display: flex; flex-direction: column; align-content: center; justify-content: center">
                     <img id="dunes-top-card-image" src="" height="80%" width="100%" style="z-index: 100003; cursor: zoom-in; margin-bottom: 10px">
-                    <p id="dunes-top-card-title" style="height: 10%; margin: 0; text-align: center; margin-bottom: 10px">Day 1</p>
-                    <p id="dunes-bottom-card-title" style="height: 10%; margin: 0; text-align: center; margin-bottom: 10px; color: red">Day 2</p>
+                    <p id="dunes-top-card-title" style="height: 10%; margin: 0; text-align: center; margin-bottom: 10px"></p>
+                    <p id="dunes-bottom-card-title" style="height: 10%; margin: 0; text-align: center; margin-bottom: 10px; color: red"></p>
                 </div>
-
-                <!--<div id="dunes-bottom-image-container" style="background-color: transparent; width: 90%; height: 40%; align-self: center; display: flex; flex-direction: column; align-content: center; justify-content: center">-->
-                    <!--<p id="dunes-bottom-card-title" style="height: 10%; margin: 0; text-align: center; margin-bottom: 10px">Day 2</p>-->
-                    <!--<img id="dunes-bottom-card-image" src="img/cross_sections_images/huallaga/Section%201.png" height="80%" width="100%" style="z-index: 100003; cursor: zoom-in">-->
-                <!--</div>-->
 
             </div>
 
@@ -1546,32 +1587,31 @@
 
             <div style="width: 100%; height: 100%; margin-right: 0%; display: flex; flex-direction: column; align-content: center; justify-content: center">
 
-                <div style="background-color: transparent; width: 90%; height: 10%; align-self: center; display: flex; align-content: center; justify-content: center">
+                <!--<div style="background-color: transparent; width: 90%; height: 10%; align-self: center; display: flex; align-content: center; justify-content: center">-->
 
-                    <div style="height: 70%; width: 60%; display: flex; align-content: center; justify-content: center; margin-right: 10%; align-self: center">
-                        <!--<p id="bedload-card-title" style="height: 100%; margin: 0; text-align: left">Location</p>-->
-                        <p id="bedload-card-title" style="height: 100%; margin: 0; text-align: left"></p>
-                    </div>
+                    <!--<div style="height: 70%; width: 60%; display: flex; align-content: center; justify-content: center; margin-right: 10%; align-self: center">-->
+                        <!--<p id="bedload-card-title" style="height: 100%; margin: 0; text-align: left"></p>-->
+                    <!--</div>-->
 
-                    <div style="background-color: transparent; width: 30%; height: 100%; display: flex; align-content: center; justify-content: center">
+                    <!--<div style="background-color: transparent; width: 30%; height: 100%; display: flex; align-content: center; justify-content: center">-->
 
-                        <div class="dropdown" style="height: 100%; width: 100%; display: flex">
-                            <button style="width: 100%; height: 90%; font-size: 1vw; border-radius: 10px" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuBedloadCampaign" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Feb/18
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuBedloadCampaign" style="overflow-x: hidden; height: auto; max-height: 200px; z-index: 1000000">
-                                <button class="dropdown-item" type="button" name="1">Feb/18</button>
-                                <button class="dropdown-item" type="button" name="2">Aug/18</button>
-                                <button class="dropdown-item" type="button" name="3">Feb/19</button>
-                            </div>
-                        </div>
+                        <!--<div class="dropdown" style="height: 100%; width: 100%; display: flex">-->
+                            <!--<button style="width: 100%; height: 90%; font-size: 1vw; border-radius: 10px" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuBedloadCampaign" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+                                <!--Feb/18-->
+                            <!--</button>-->
+                            <!--<div class="dropdown-menu" aria-labelledby="dropdownMenuBedloadCampaign" style="overflow-x: hidden; height: auto; max-height: 200px; z-index: 1000000">-->
+                                <!--<button class="dropdown-item" type="button" name="1">Feb/18</button>-->
+                                <!--<button class="dropdown-item" type="button" name="2">Aug/18</button>-->
+                                <!--<button class="dropdown-item" type="button" name="3">Feb/19</button>-->
+                            <!--</div>-->
+                        <!--</div>-->
 
-                    </div>
+                    <!--</div>-->
 
-                </div>
+                <!--</div>-->
 
-                <div id="bedload-image-container" style="background-color: transparent; width: 90%; height: 70%; align-self: center; display: flex; flex-direction: column; align-content: center; justify-content: center">
-                    <p id="bedload-image-card-title" style="height: 10%; margin: 0; text-align: center; margin-bottom: 10px">Bedload</p>
+                <div id="bedload-image-container" style="background-color: transparent; width: 90%; height: 90%; align-self: center; display: flex; flex-direction: column; align-content: center; justify-content: center">
+                    <p id="bedload-image-card-title" style="height: 10%; margin: 0; text-align: center; margin-bottom: 10px" data-i18n="bedload-card-title"></p>
                     <img id="bedload-card-image" src="" height="80%" width="100%" style="z-index: 100003; cursor: zoom-in">
                 </div>
 

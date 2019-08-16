@@ -280,7 +280,7 @@ function initMap() {
 
     map.addListener("drag", function () {
 
-        fadeOutElements(["drone-flights-marker-click-container", "lspiv-marker-click-container"], 350);
+        // fadeOutElements(["drone-flights-marker-click-container", "lspiv-marker-click-container"], 350);
         previous_drone_marker_coordinates.lat = -180;
         previous_drone_marker_coordinates.lng = -180;
 
@@ -328,28 +328,71 @@ function initMap() {
             "river_width_layer": [amazonas_avg_width_data_layer_1987, amazonas_avg_width_data_layer_1993, amazonas_avg_width_data_layer_1999, amazonas_avg_width_data_layer_2005, amazonas_avg_width_data_layer_2011, amazonas_avg_width_data_layer_2017],
             "river_sinuosity_layer": [amazonas_sinuosity_data_layer_1987, amazonas_sinuosity_data_layer_1993, amazonas_sinuosity_data_layer_1999, amazonas_sinuosity_data_layer_2005, amazonas_sinuosity_data_layer_2011, amazonas_sinuosity_data_layer_2017],
             "river_wavelength_layer": [amazonas_wavelength_data_layer_1987, amazonas_wavelength_data_layer_1993, amazonas_wavelength_data_layer_1999, amazonas_wavelength_data_layer_2005, amazonas_wavelength_data_layer_2011, amazonas_wavelength_data_layer_2017],
-            "river_path": ["data/rivers/Amazon/amazon1987.json", "data/rivers/Amazon/amazon1993.json", "data/rivers/Amazon/amazon1999.json", "data/rivers/Amazon/amazon2005.json", "data/rivers/Amazon/amazon2011.json", "data/rivers/Amazon/amazon2017.json"]
+            "river_islands_layer": [amazonas_islands_data_layer_1987, amazonas_islands_data_layer_1993, amazonas_islands_data_layer_1999, amazonas_islands_data_layer_2005, amazonas_islands_data_layer_2011, amazonas_islands_data_layer_2017],
+            "river_path": ["data/rivers/Amazon/amazon1987.json", "data/rivers/Amazon/amazon1993.json", "data/rivers/Amazon/amazon1999.json", "data/rivers/Amazon/amazon2005.json", "data/rivers/Amazon/amazon2011.json", "data/rivers/Amazon/amazon2017.json"],
+            "river_island_path": ["data/rivers_islands/Amazonas/awislas_amaz_1987.geojson", "data/rivers_islands/Amazonas/awislas_amaz_1993.geojson", "data/rivers_islands/Amazonas/awislas_amaz_1999.geojson", "data/rivers_islands/Amazonas/awislas_amaz_2005.geojson", "data/rivers_islands/Amazonas/awislas_amaz_2011.geojson", "data/rivers_islands/Amazonas/awislas_amaz_2017.geojson"]
         },
         {
             "river": "Huallaga",
             "river_width_layer": [huallaga_avg_width_data_layer_1989, huallaga_avg_width_data_layer_1993, huallaga_avg_width_data_layer_1997, huallaga_avg_width_data_layer_2001,huallaga_avg_width_data_layer_2005, huallaga_avg_width_data_layer_2009, huallaga_avg_width_data_layer_2013, huallaga_avg_width_data_layer_2017],
             "river_sinuosity_layer": [huallaga_sinuosity_data_layer_1989, huallaga_sinuosity_data_layer_1993, huallaga_sinuosity_data_layer_1997, huallaga_sinuosity_data_layer_2001, huallaga_sinuosity_data_layer_2005, huallaga_sinuosity_data_layer_2009, huallaga_sinuosity_data_layer_2013, huallaga_sinuosity_data_layer_2017],
             "river_wavelength_layer": [huallaga_wavelength_data_layer_1989, huallaga_wavelength_data_layer_1993, huallaga_wavelength_data_layer_1997, huallaga_wavelength_data_layer_2001, huallaga_wavelength_data_layer_2005, huallaga_wavelength_data_layer_2009, huallaga_wavelength_data_layer_2013, huallaga_wavelength_data_layer_2017],
-            "river_path": ["data/rivers/Huallaga/huallaga1989.json", "data/rivers/Huallaga/huallaga1993.json", "data/rivers/Huallaga/huallaga1997.json", "data/rivers/Huallaga/huallaga2001.json", "data/rivers/Huallaga/huallaga2005.json", "data/rivers/Huallaga/huallaga2009.json", "data/rivers/Huallaga/huallaga2013.json", "data/rivers/Huallaga/huallaga2017.json"]
+            "river_islands_layer": [huallaga_islands_data_layer_1987, huallaga_islands_data_layer_1993, huallaga_islands_data_layer_1999, huallaga_islands_data_layer_2005, huallaga_islands_data_layer_2011, huallaga_islands_data_layer_2017],
+            "river_path": ["data/rivers/Huallaga/huallaga1989.json", "data/rivers/Huallaga/huallaga1993.json", "data/rivers/Huallaga/huallaga1997.json", "data/rivers/Huallaga/huallaga2001.json", "data/rivers/Huallaga/huallaga2005.json", "data/rivers/Huallaga/huallaga2009.json", "data/rivers/Huallaga/huallaga2013.json", "data/rivers/Huallaga/huallaga2017.json"],
+            // "river_path": ["data/test/h_main1987.geojson", "data/test/h_main1993.geojson", "data/test/h_main1999.geojson", "data/test/h_main2005.geojson", "data/test/h_main2011.geojson", "data/test/h_main2017.geojson"],
+            "river_island_path": []
         },
         {
             "river": "Marañon",
             "river_width_layer": [marañon_avg_width_data_layer_1987, marañon_avg_width_data_layer_1993, marañon_avg_width_data_layer_1999, marañon_avg_width_data_layer_2005, marañon_avg_width_data_layer_2011, marañon_avg_width_data_layer_2017],
             "river_sinuosity_layer": [marañon_sinuosity_data_layer_1987, marañon_sinuosity_data_layer_1993, marañon_sinuosity_data_layer_1999, marañon_sinuosity_data_layer_2005, marañon_sinuosity_data_layer_2011, marañon_sinuosity_data_layer_2017],
             "river_wavelength_layer": [marañon_wavelength_data_layer_1987, marañon_wavelength_data_layer_1993, marañon_wavelength_data_layer_1999, marañon_wavelength_data_layer_2005, marañon_wavelength_data_layer_2011, marañon_wavelength_data_layer_2017],
-            "river_path": ["data/rivers/Marañon/maranon1987.json", "data/rivers/Marañon/maranon1993.json", "data/rivers/Marañon/maranon1999.json", "data/rivers/Marañon/maranon2005.json", "data/rivers/Marañon/maranon2011.json", "data/rivers/Marañon/maranon2017.json"]
+            "river_islands_layer": [marañon_islands_data_layer_1987, marañon_islands_data_layer_1993, marañon_islands_data_layer_1999, marañon_islands_data_layer_2005, marañon_islands_data_layer_2011, marañon_islands_data_layer_2017],
+            "river_path": ["data/rivers/Marañon/maranon1987.json", "data/rivers/Marañon/maranon1993.json", "data/rivers/Marañon/maranon1999.json", "data/rivers/Marañon/maranon2005.json", "data/rivers/Marañon/maranon2011.json", "data/rivers/Marañon/maranon2017.json"],
+            "river_island_path": ["data/rivers_islands/Marañon/awislas_mara_1987.geojson", "data/rivers_islands/Marañon/awislas_mara_1993.geojson", "data/rivers_islands/Marañon/awislas_mara_1999.geojson", "data/rivers_islands/Marañon/awislas_mara_2005.geojson", "data/rivers_islands/Marañon/awislas_mara_2011.geojson", "data/rivers_islands/Marañon/awislas_mara_2017.geojson"]
         },
         {
             "river": "Ucayali",
             "river_width_layer": [ucayali_avg_width_data_layer_1989, ucayali_avg_width_data_layer_1993, ucayali_avg_width_data_layer_1997, ucayali_avg_width_data_layer_2001, ucayali_avg_width_data_layer_2005, ucayali_avg_width_data_layer_2009, ucayali_avg_width_data_layer_2013, ucayali_avg_width_data_layer_2017],
             "river_sinuosity_layer": [ucayali_sinuosity_data_layer_1989, ucayali_sinuosity_data_layer_1993, ucayali_sinuosity_data_layer_1997, ucayali_sinuosity_data_layer_2001, ucayali_sinuosity_data_layer_2005, ucayali_sinuosity_data_layer_2009, ucayali_sinuosity_data_layer_2013, ucayali_sinuosity_data_layer_2017],
             "river_wavelength_layer": [ucayali_wavelength_data_layer_1989, ucayali_wavelength_data_layer_1993, ucayali_wavelength_data_layer_1997, ucayali_wavelength_data_layer_2001, ucayali_wavelength_data_layer_2005, ucayali_wavelength_data_layer_2009, ucayali_wavelength_data_layer_2013, ucayali_wavelength_data_layer_2017],
-            "river_path": ["data/rivers/Ucayali/ucayali1989.json", "data/rivers/Ucayali/ucayali1993.json", "data/rivers/Ucayali/ucayali1997.json", "data/rivers/Ucayali/ucayali2001.json", "data/rivers/Ucayali/ucayali2005.json", "data/rivers/Ucayali/ucayali2009.json", "data/rivers/Ucayali/ucayali2013.json", "data/rivers/Ucayali/ucayali2017.json"]
+            "river_islands_layer": [ucayali_islands_data_layer_1987, ucayali_islands_data_layer_1993, ucayali_islands_data_layer_1999, ucayali_islands_data_layer_2005, ucayali_islands_data_layer_2011, ucayali_islands_data_layer_2017],
+            "river_path": ["data/rivers/Ucayali/ucayali1989.json", "data/rivers/Ucayali/ucayali1993.json", "data/rivers/Ucayali/ucayali1997.json", "data/rivers/Ucayali/ucayali2001.json", "data/rivers/Ucayali/ucayali2005.json", "data/rivers/Ucayali/ucayali2009.json", "data/rivers/Ucayali/ucayali2013.json", "data/rivers/Ucayali/ucayali2017.json"],
+            "river_island_path": []
+
+        }
+
+    ];
+
+    upper_rivers_morphometrics_JSON = [
+
+        {
+            "river": "Amazonas",
+            "river_width_layer": [amazonas_upper_avg_width_data_layer_1987, amazonas_upper_avg_width_data_layer_1993, amazonas_upper_avg_width_data_layer_1999, amazonas_upper_avg_width_data_layer_2005, amazonas_upper_avg_width_data_layer_2011, amazonas_upper_avg_width_data_layer_2017],
+            "river_sinuosity_layer": [amazonas_upper_sinuosity_data_layer_1987, amazonas_upper_sinuosity_data_layer_1993, amazonas_upper_sinuosity_data_layer_1999, amazonas_upper_sinuosity_data_layer_2005, amazonas_upper_sinuosity_data_layer_2011, amazonas_upper_sinuosity_data_layer_2017],
+            "river_wavelength_layer": [amazonas_upper_wavelength_data_layer_1987, amazonas_upper_wavelength_data_layer_1993, amazonas_upper_wavelength_data_layer_1999, amazonas_upper_wavelength_data_layer_2005, amazonas_upper_wavelength_data_layer_2011, amazonas_upper_wavelength_data_layer_2017],
+            "river_path": []
+        },
+        {
+            "river": "Huallaga",
+            "river_width_layer": [huallaga_upper_avg_width_data_layer_1989, huallaga_upper_avg_width_data_layer_1993, huallaga_upper_avg_width_data_layer_1997, huallaga_upper_avg_width_data_layer_2001,huallaga_upper_avg_width_data_layer_2005, huallaga_upper_avg_width_data_layer_2009, huallaga_upper_avg_width_data_layer_2013, huallaga_upper_avg_width_data_layer_2017],
+            "river_sinuosity_layer": [huallaga_upper_sinuosity_data_layer_1989, huallaga_upper_sinuosity_data_layer_1993, huallaga_upper_sinuosity_data_layer_1997, huallaga_upper_sinuosity_data_layer_2001, huallaga_upper_sinuosity_data_layer_2005, huallaga_upper_sinuosity_data_layer_2009, huallaga_upper_sinuosity_data_layer_2013, huallaga_upper_sinuosity_data_layer_2017],
+            "river_wavelength_layer": [huallaga_upper_wavelength_data_layer_1989, huallaga_upper_wavelength_data_layer_1993, huallaga_upper_wavelength_data_layer_1997, huallaga_upper_wavelength_data_layer_2001, huallaga_upper_wavelength_data_layer_2005, huallaga_upper_wavelength_data_layer_2009, huallaga_upper_wavelength_data_layer_2013, huallaga_upper_wavelength_data_layer_2017],
+            "river_path": ["data/upper-river/Huallaga/upper_huallaga_1987.geojson", "data/upper-river/Huallaga/upper_huallaga_1993.geojson", "data/upper-river/Huallaga/upper_huallaga_1999.geojson", "data/upper-river/Huallaga/upper_huallaga_2005.geojson", "data/upper-river/Huallaga/upper_huallaga_2011.geojson", "data/upper-river/Huallaga/upper_huallaga_2017.geojson"]
+        },
+        {
+            "river": "Marañon",
+            "river_width_layer": [marañon_upper_avg_width_data_layer_1987, marañon_upper_avg_width_data_layer_1993, marañon_upper_avg_width_data_layer_1999, marañon_upper_avg_width_data_layer_2005, marañon_upper_avg_width_data_layer_2011, marañon_upper_avg_width_data_layer_2017],
+            "river_sinuosity_layer": [marañon_upper_sinuosity_data_layer_1987, marañon_upper_sinuosity_data_layer_1993, marañon_upper_sinuosity_data_layer_1999, marañon_upper_sinuosity_data_layer_2005, marañon_upper_sinuosity_data_layer_2011, marañon_upper_sinuosity_data_layer_2017],
+            "river_wavelength_layer": [marañon_upper_wavelength_data_layer_1987, marañon_upper_wavelength_data_layer_1993, marañon_upper_wavelength_data_layer_1999, marañon_upper_wavelength_data_layer_2005, marañon_upper_wavelength_data_layer_2011, marañon_upper_wavelength_data_layer_2017],
+            "river_path": []
+        },
+        {
+            "river": "Ucayali",
+            "river_width_layer": [ucayali_upper_avg_width_data_layer_1989, ucayali_upper_avg_width_data_layer_1993, ucayali_upper_avg_width_data_layer_1997, ucayali_upper_avg_width_data_layer_2001, ucayali_upper_avg_width_data_layer_2005, ucayali_upper_avg_width_data_layer_2009, ucayali_upper_avg_width_data_layer_2013, ucayali_upper_avg_width_data_layer_2017],
+            "river_sinuosity_layer": [ucayali_upper_sinuosity_data_layer_1989, ucayali_upper_sinuosity_data_layer_1993, ucayali_upper_sinuosity_data_layer_1997, ucayali_upper_sinuosity_data_layer_2001, ucayali_upper_sinuosity_data_layer_2005, ucayali_upper_sinuosity_data_layer_2009, ucayali_upper_sinuosity_data_layer_2013, ucayali_upper_sinuosity_data_layer_2017],
+            "river_wavelength_layer": [ucayali_upper_wavelength_data_layer_1989, ucayali_upper_wavelength_data_layer_1993, ucayali_upper_wavelength_data_layer_1997, ucayali_upper_wavelength_data_layer_2001, ucayali_upper_wavelength_data_layer_2005, ucayali_upper_wavelength_data_layer_2009, ucayali_upper_wavelength_data_layer_2013, ucayali_upper_wavelength_data_layer_2017],
+            "river_path": []
         }
 
     ];
@@ -399,12 +442,34 @@ function initMap() {
         initializeDataLayers(rivers_morphometrics_JSON[j].river_width_layer);
         initializeDataLayers(rivers_morphometrics_JSON[j].river_sinuosity_layer);
         initializeDataLayers(rivers_morphometrics_JSON[j].river_wavelength_layer);
+        initializeDataLayers(rivers_morphometrics_JSON[j].river_islands_layer);
 
         for (var k = 0; k < rivers_morphometrics_JSON[j].river_path.length; k++){
 
             addInteractiveSinglePolygonToMap(rivers_morphometrics_JSON[j].river_path[k], rivers_morphometrics_JSON[j].river_width_layer[k], "av_width", null, morphometricsMouseoverCallback, morphometricsMouseoutCallback, null);
             addInteractiveSinglePolygonToMap(rivers_morphometrics_JSON[j].river_path[k], rivers_morphometrics_JSON[j].river_sinuosity_layer[k], "sinuosity", null, morphometricsMouseoverCallback, morphometricsMouseoutCallback, null);
             addInteractiveSinglePolygonToMap(rivers_morphometrics_JSON[j].river_path[k], rivers_morphometrics_JSON[j].river_wavelength_layer[k], "arcwavelen", null, morphometricsMouseoverCallback, morphometricsMouseoutCallback, null);
+
+        }
+
+        for (var l = 0; l < rivers_morphometrics_JSON[j].river_island_path.length; l++){
+            addInteractiveSinglePolygonToMap(rivers_morphometrics_JSON[j].river_island_path[l], rivers_morphometrics_JSON[j].river_islands_layer[l], "islands", null, morphometricsIslandsMouseoverCallback, morphometricsMouseoutCallback, null);
+        }
+
+    }
+
+    //Morphometrics upper data layers initialization
+    for (var p = 0; p < upper_rivers_morphometrics_JSON.length; p++){
+
+        initializeDataLayers(upper_rivers_morphometrics_JSON[p].river_width_layer);
+        initializeDataLayers(upper_rivers_morphometrics_JSON[p].river_sinuosity_layer);
+        initializeDataLayers(upper_rivers_morphometrics_JSON[p].river_wavelength_layer);
+
+        for (var q = 0; q < upper_rivers_morphometrics_JSON[p].river_path.length; q++){
+
+            addInteractiveSinglePolygonToMap(upper_rivers_morphometrics_JSON[p].river_path[q], upper_rivers_morphometrics_JSON[p].river_width_layer[q], "av_width", null, morphometricsMouseoverCallback, morphometricsMouseoutCallback, null);
+            addInteractiveSinglePolygonToMap(upper_rivers_morphometrics_JSON[p].river_path[q], upper_rivers_morphometrics_JSON[p].river_sinuosity_layer[q], "sinuosity", null, morphometricsMouseoverCallback, morphometricsMouseoutCallback, null);
+            addInteractiveSinglePolygonToMap(upper_rivers_morphometrics_JSON[p].river_path[q], upper_rivers_morphometrics_JSON[p].river_wavelength_layer[q], "arcwavelen", null, morphometricsMouseoverCallback, morphometricsMouseoutCallback, null);
 
         }
 
@@ -445,7 +510,7 @@ function initMap() {
     ucayali_migration_data_layers = initializeDataLayersLiteral(ucayali_migration_data_layers);
 
     //Migration
-    // addInteractiveSinglePolygonToMap("data/rivers/Ucayali/Migration/ucayali_migration_1987_1989.geojson", ucayali_migration_1987_1989_data_layer, "migration", null, null, null, null);
+    //addInteractiveSinglePolygonToMap("data/rivers/Ucayali/Migration/ucayali_migration_1987_1989.geojson", ucayali_migration_1987_1989_data_layer, "migration", null, null, null, null);
 
     for (var m = 0; m < huallaga_migration_data_layers.length; m++){
 
@@ -455,11 +520,124 @@ function initMap() {
     }
 
     //Dunes
-    addInteractiveSinglePolygonToMap("data/UHG-dunes/UHG_Sections_Huallaga_Moore_I_Feb_Mar_2018.geojson", dunes_sections_huallaga_campaign_1_data_layer, "dunes_sections", dunesSectionsClickCallback, null, null, null);
-    addInteractiveSinglePolygonToMap("data/UHG-dunes/UHG_Lines_Huallaga_Moore_I_Feb_Mar_2018.geojson", dunes_lines_huallaga_campaign_1_data_layer, "dunes_lines", null, null, null, null);
+    rivers_dunes_JSON = [
+
+        {
+            "river": "Amazonas",
+            "campaign_1_layers": [],
+            "campaign_1_layers_path": [],
+            "campaign_2_layers": [],
+            "campaign_2_layers_path": [],
+            "campaign_3_layers": [],
+            "campaign_3_layers_path": []
+        },
+        {
+            "river": "Huallaga",
+            "campaign_1_layers": [huallaga_dunes_campaign_1_sections_layer, huallaga_dunes_campaign_1_lines_layer],
+            "campaign_1_layers_path": ["data/UHG-dunes/Huallaga/Campaign_1/sections.geojson", "data/UHG-dunes/Huallaga/Campaign_1/lines.geojson"],
+            "campaign_2_layers": [huallaga_dunes_campaign_2_sections_layer],
+            "campaign_2_layers_path": ["data/UHG-dunes/Huallaga/Campaign_2/sections.geojson"],
+            "campaign_3_layers": [],
+            "campaign_3_layers_path": []
+        },
+        {
+            "river": "Marañon",
+            "campaign_1_layers": [],
+            "campaign_1_layers_path": [],
+            "campaign_2_layers": [marañon_dunes_campaign_2_sections_layer],
+            "campaign_2_layers_path": ["data/UHG-dunes/Marañon/Campaign_2/sections.geojson"],
+            "campaign_3_layers": [marañon_dunes_campaign_3_sections_layer],
+            "campaign_3_layers_path": ["data/UHG-dunes/Marañon/Campaign_3/sections.geojson"]
+        },
+        {
+            "river": "Ucayali",
+            "campaign_1_layers": [],
+            "campaign_1_layers_path": [],
+            "campaign_2_layers": [ucayali_dunes_campaign_2_sections_layer],
+            "campaign_2_layers_path": ["data/UHG-dunes/Ucayali/Campaign_2/sections.geojson"],
+            "campaign_3_layers": [],
+            "campaign_3_layers_path": []
+        }
+
+    ];
+
+    for (var n = 0; n < rivers_dunes_JSON.length; n++){
+
+        initializeDataLayers(rivers_dunes_JSON[n].campaign_1_layers);
+        initializeDataLayers(rivers_dunes_JSON[n].campaign_2_layers);
+        initializeDataLayers(rivers_dunes_JSON[n].campaign_3_layers);
+
+        for (var m = 0; m < rivers_dunes_JSON[n].campaign_2_layers_path.length; m++){
+
+            addInteractiveSinglePolygonToMap(rivers_dunes_JSON[n].campaign_1_layers_path[m], rivers_dunes_JSON[n].campaign_1_layers[m], "dunes_sections", dunesSectionsClickCallback, null, null, null);
+            addInteractiveSinglePolygonToMap(rivers_dunes_JSON[n].campaign_2_layers_path[m], rivers_dunes_JSON[n].campaign_2_layers[m], "dunes_sections", dunesSectionsClickCallback, null, null, null);
+            addInteractiveSinglePolygonToMap(rivers_dunes_JSON[n].campaign_3_layers_path[m], rivers_dunes_JSON[n].campaign_3_layers[m], "dunes_sections", dunesSectionsClickCallback, null, null, null);
+
+        }
+
+    }
+
+    //TODO: Se agrego manualmente geojson de los perfiles de la campaña 1 para el huallaga. Todos los shapes deberian tener sus perfiles
+    rivers_dunes_JSON[1].campaign_1_layers[1] = new google.maps.Data();
+    addInteractiveSinglePolygonToMap(rivers_dunes_JSON[1].campaign_1_layers_path[1], rivers_dunes_JSON[1].campaign_1_layers[1], "dunes_lines", null, null, null, null);
 
     //Bedload
-    addInteractiveSinglePolygonToMap("data/UHG-dunes/UHG_Sections_Huallaga_Moore_I_Feb_Mar_2018.geojson", bedload_sections_huallaga_campaign_1_data_layer, "bedload", bedloadSectionsClickCallback, null, null, null);
+    rivers_bedload_JSON = [
+
+        {
+            "river": "Amazonas",
+            "campaign_1_layers": [],
+            "campaign_1_layers_path": [],
+            "campaign_2_layers": [],
+            "campaign_2_layers_path": [],
+            "campaign_3_layers": [],
+            "campaign_3_layers_path": []
+        },
+        {
+            "river": "Huallaga",
+            "campaign_1_layers": [huallaga_bedload_campaign_1_sections_layer],
+            "campaign_1_layers_path": ["data/UHG-bedload/Huallaga/Campaign_1/sections.geojson"],
+            "campaign_2_layers": [],
+            "campaign_2_layers_path": [],
+            "campaign_3_layers": [],
+            "campaign_3_layers_path": []
+        },
+        {
+            "river": "Marañon",
+            "campaign_1_layers": [],
+            "campaign_1_layers_path": [],
+            "campaign_2_layers": [],
+            "campaign_2_layers_path": [],
+            "campaign_3_layers": [],
+            "campaign_3_layers_path": []
+        },
+        {
+            "river": "Ucayali",
+            "campaign_1_layers": [],
+            "campaign_1_layers_path": [],
+            "campaign_2_layers": [],
+            "campaign_2_layers_path": [],
+            "campaign_3_layers": [],
+            "campaign_3_layers_path": []
+        }
+
+    ];
+
+    for (var r = 0; r < rivers_bedload_JSON.length; r++){
+
+        initializeDataLayers(rivers_bedload_JSON[r].campaign_1_layers);
+        initializeDataLayers(rivers_bedload_JSON[r].campaign_2_layers);
+        initializeDataLayers(rivers_bedload_JSON[r].campaign_3_layers);
+
+        for (var s = 0; s < rivers_bedload_JSON[r].campaign_1_layers_path.length; s++){
+
+            addInteractiveSinglePolygonToMap(rivers_bedload_JSON[r].campaign_1_layers_path[s], rivers_bedload_JSON[r].campaign_1_layers[s], "dunes_sections", bedloadSectionsClickCallback, null, null, null);
+            addInteractiveSinglePolygonToMap(rivers_bedload_JSON[r].campaign_2_layers_path[s], rivers_bedload_JSON[r].campaign_2_layers[s], "dunes_sections", bedloadSectionsClickCallback, null, null, null);
+            addInteractiveSinglePolygonToMap(rivers_bedload_JSON[r].campaign_3_layers_path[s], rivers_bedload_JSON[r].campaign_3_layers[s], "dunes_sections", bedloadSectionsClickCallback, null, null, null);
+
+        }
+
+    }
 
     //Erosion - Deposition data layers initialization
     initializeDataLayers(rivers_erosion_deposition_JSON[0].river_data_NC_layer);

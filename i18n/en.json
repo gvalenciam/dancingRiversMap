@@ -25,6 +25,17 @@
   "side-bar-left-title": "CITA",
   "side-bar-empty-title": " ",
 
+  "dropdown-uhd-default-option" : "Section 1",
+
+  "dunes-campaign-campaign-1-text": "Campaign 1",
+  "dunes-campaign-campaign-1-text-hover": "Feb/Mar 2018",
+  "dunes-campaign-campaign-2-text": "Campaign 2",
+  "dunes-campaign-campaign-2-text-hover": "Jan/Mar 2019",
+  "dunes-campaign-campaign-3-text": "Campaign 3",
+  "dunes-campaign-campaign-3-text-hover": "Mar/Apr 2019",
+
+  "bedload-card-title": "Bedload",
+
   "drone-flights-card-container-title": "Drone Flights",
 
 
@@ -47,6 +58,7 @@
   "arc_wavelength_submenu_option_title_id": "Arc Wavelength",
   "migration_submenu_option_title_id": "Migration",
   "erosion_submenu_option_title_id": "Erosion - Deposition",
+  "islands_submenu_option_title_id": "Islands",
   "water_level_submenu_option_title_id": "Water Levels",
   "flow_rate_submenu_option_title_id": "Flow Rate",
   "hydrodynamic_submenu_option_title_id": "Flow Velocity",
@@ -184,8 +196,6 @@
   "aquafondo_submenu_option_title_id": "Aquafondo",
 
   "cita_stations_menu_option_title_id": "Stations",
-  "lspiv_submenu_option_title_id": "LSPIV",
-  "sediments_submenu_option_title_id": "Sediments",
   "adcp_submenu_option_title_id": "ADCP",
 
   "population_density_basin_menu_option_title_id": "Population Density by Basin",
@@ -205,14 +215,20 @@
   "help-tooltip-text": "Select a River",
   "legend-morphometrics-title": "Legend",
   "metrics-container-title": "Morphometrics",
-  "metrics-average-width": "Average Width",
+  "metrics-average-width": "Average width",
   "metrics-sinuosity": "Sinuosity",
-  "metrics-arc-wavelength": "Arc Wavelength",
+  "metrics-arc-wavelength": "Arc wavelength",
+  "metrics-island-area": "Area",
+  "metrics-island-number": "Number",
+  "metrics-island-average-width": "Average width",
   "coordinates-hover-container-title": "Coordinates",
   "coordinates-hover-container-latitude": "Latitude",
   "coordinates-hover-container-longitude": "Longitude",
 
   "dropdown-UHD-section-item": "Section $1",
+  "dropdown-dunes-profile-item": "Profile $1",
+  "dunes-day-1": "Day 1: ",
+  "dunes-day-2": "Day 2: ",
 
   "amazon-home-tab": "Home",
   "amazon-research-tab": "Research",

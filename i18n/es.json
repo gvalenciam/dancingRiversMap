@@ -25,6 +25,17 @@
   "side-bar-left-title": "CITA",
   "side-bar-empty-title": " ",
 
+  "dropdown-uhd-default-option" : "Sección 1",
+
+  "dunes-campaign-campaign-1-text": "Campaña 1",
+  "dunes-campaign-campaign-1-text-hover": "Feb/Mar 2018",
+  "dunes-campaign-campaign-2-text": "Campaña 2",
+  "dunes-campaign-campaign-2-text-hover": "Ene/Mar 2019",
+  "dunes-campaign-campaign-3-text": "Campaña 3",
+  "dunes-campaign-campaign-3-text-hover": "Mar/Abr 2019",
+
+  "bedload-card-title": "Transporte de fondo",
+
   "drone-flights-card-container-title": "Vuelos de drone",
 
 
@@ -46,6 +57,7 @@
   "arc_wavelength_submenu_option_title_id": "Longitud de Arco",
   "migration_submenu_option_title_id": "Migración",
   "erosion_submenu_option_title_id": "Erosion - Deposición",
+  "islands_submenu_option_title_id": "Islas",
   "water_level_submenu_option_title_id": "Nivel de Agua",
   "flow_rate_submenu_option_title_id": "Caudal",
   "hydrodynamic_submenu_option_title_id": "Velocidades",
@@ -178,8 +190,6 @@
   "aquafondo_submenu_option_title_id": "Aquafondo",
 
   "cita_stations_menu_option_title_id": "Estaciones",
-  "lspiv_submenu_option_title_id": "LSPIV",
-  "sediments_submenu_option_title_id": "Sedimentos",
   "adcp_submenu_option_title_id": "ADCP",
 
 
@@ -195,14 +205,20 @@
   "help-tooltip-text": "Selecciona un Río",
   "legend-morphometrics-title": "Leyenda",
   "metrics-container-title": "Morfométricas",
-  "metrics-average-width": "Ancho Promedio",
+  "metrics-average-width": "Ancho promedio",
   "metrics-sinuosity": "Sinuosidad",
-  "metrics-arc-wavelength": "Longitud de Arco",
+  "metrics-arc-wavelength": "Longitud de arco",
+  "metrics-island-area": "Área",
+  "metrics-island-number": "Número",
+  "metrics-island-average-width": "Ancho promedio",
   "coordinates-hover-container-title": "Coordenadas",
   "coordinates-hover-container-latitude": "Latitud",
   "coordinates-hover-container-longitude": "Longitud",
 
   "dropdown-UHD-section-item": "Sección $1",
+  "dropdown-dunes-profile-item": "Perfil $1",
+  "dunes-day-1": "Día 1: ",
+  "dunes-day-2": "Día 2: ",
 
   "amazon-home-tab": "Inicio",
   "amazon-research-tab": "Investigación",
